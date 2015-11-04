@@ -1,0 +1,61 @@
+<Solution>
+  <PropertyGroup Name="E-home-Noodle" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <PlistImageFolder Image="GameScene.png" PListFile="GameScene.plist" Name=".GameScene_PList.Dir">
+          <PlistImageFile Name="game1_icon_ashcan.png" Key="game1_icon_ashcan.png" />
+          <PlistImageFile Name="game1_icon_board.png" Key="game1_icon_board.png" />
+          <PlistImageFile Name="game1_icon_cake.png" Key="game1_icon_cake.png" />
+          <PlistImageFile Name="game1_icon_cake_tray.png" Key="game1_icon_cake_tray.png" />
+          <PlistImageFile Name="game1_icon_cook_dg.png" Key="game1_icon_cook_dg.png" />
+          <PlistImageFile Name="game1_icon_cook_dishes.png" Key="game1_icon_cook_dishes.png" />
+          <PlistImageFile Name="game1_icon_cook_word.png" Key="game1_icon_cook_word.png" />
+          <PlistImageFile Name="game1_icon_cookbook.png" Key="game1_icon_cookbook.png" />
+          <PlistImageFile Name="game1_icon_food_beff01.png" Key="game1_icon_food_beff01.png" />
+          <PlistImageFile Name="game1_icon_food_broccoli01.png" Key="game1_icon_food_broccoli01.png" />
+          <PlistImageFile Name="game1_icon_food_chicken01.png" Key="game1_icon_food_chicken01.png" />
+          <PlistImageFile Name="game1_icon_food_chili01.png" Key="game1_icon_food_chili01.png" />
+          <PlistImageFile Name="game1_icon_food_dumplings01.png" Key="game1_icon_food_dumplings01.png" />
+          <PlistImageFile Name="game1_icon_food_egg01.png" Key="game1_icon_food_egg01.png" />
+          <PlistImageFile Name="game1_icon_food_fish01.png" Key="game1_icon_food_fish01.png" />
+          <PlistImageFile Name="game1_icon_food_mushrooms01.png" Key="game1_icon_food_mushrooms01.png" />
+          <PlistImageFile Name="game1_icon_food_noodles01.png" Key="game1_icon_food_noodles01.png" />
+          <PlistImageFile Name="game1_icon_food_pork01.png" Key="game1_icon_food_pork01.png" />
+          <PlistImageFile Name="game1_icon_food_shallot01.png" Key="game1_icon_food_shallot01.png" />
+          <PlistImageFile Name="game1_icon_food_shrimp01.png" Key="game1_icon_food_shrimp01.png" />
+          <PlistImageFile Name="game1_icon_order_edge.png" Key="game1_icon_order_edge.png" />
+          <PlistImageFile Name="game1_icon_order_heart_black.png" Key="game1_icon_order_heart_black.png" />
+          <PlistImageFile Name="game1_icon_order_heart_edge.png" Key="game1_icon_order_heart_edge.png" />
+          <PlistImageFile Name="game1_icon_order_heart_half.png" Key="game1_icon_order_heart_half.png" />
+          <PlistImageFile Name="game1_icon_order_heart_red.png" Key="game1_icon_order_heart_red.png" />
+          <PlistImageFile Name="game1_icon_orderbg.png" Key="game1_icon_orderbg.png" />
+          <PlistImageFile Name="game1_icon_phone.png" Key="game1_icon_phone.png" />
+          <PlistImageFile Name="game1_icon_plate.png" Key="game1_icon_plate.png" />
+          <PlistImageFile Name="game1_icon_seat.png" Key="game1_icon_seat.png" />
+          <PlistImageFile Name="game1_icon_track.png" Key="game1_icon_track.png" />
+          <PlistImageFile Name="game1_icon_track_edge01.png" Key="game1_icon_track_edge01.png" />
+          <PlistImageFile Name="game1_icon_track_edge02.png" Key="game1_icon_track_edge02.png" />
+          <PlistImageFile Name="game1_icon_yangchunmian.png" Key="game1_icon_yangchunmian.png" />
+          <PlistImageFile Name="game_ui_menu_Level.png" Key="game_ui_menu_Level.png" />
+          <PlistImageFile Name="game_ui_menu_angry.png" Key="game_ui_menu_angry.png" />
+          <PlistImageFile Name="game_ui_menu_menu.png" Key="game_ui_menu_menu.png" />
+          <PlistImageFile Name="game_ui_menu_menubg.png" Key="game_ui_menu_menubg.png" />
+          <PlistImageFile Name="game_ui_menu_money.png" Key="game_ui_menu_money.png" />
+          <PlistImageFile Name="game_ui_menu_show.png" Key="game_ui_menu_show.png" />
+          <PlistImageFile Name="game_ui_menu_showbg.png" Key="game_ui_menu_showbg.png" />
+          <PlistImageFile Name="game_ui_menu_smile.png" Key="game_ui_menu_smile.png" />
+          <PlistImageFile Name="game_ui_menu_time.png" Key="game_ui_menu_time.png" />
+          <PlistImageFile Name="game_ui_menubg.png" Key="game_ui_menubg.png" />
+          <PlistImageFile Name="game_ui_table.png" Key="game_ui_table.png" />
+        </PlistImageFolder>
+        <Project Name="GameScene.csd" Type="Scene" />
+        <Project Name="FoodBasket.csd" Type="Node" />
+        <Project Name="Cake.csd" Type="Node" />
+        <Project Name="Heart.csd" Type="Node" />
+        <Image Name="BG.png" />
+        <Project Name="Bar.csd" Type="Node" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
