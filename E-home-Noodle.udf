@@ -28,14 +28,5 @@
         <LastRunType Value="Windows" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="GameScene.csd" />
-          <FilePathData Path="FoodBasket.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="GameScene.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

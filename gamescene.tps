@@ -190,6 +190,39 @@
             <filename>../LaMIan/美术/ui/game_ui_menu_smile.png</filename>
             <filename>../LaMIan/美术/ui/game_ui_menu_time.png</filename>
             <filename>../LaMIan/美术/ui/game_ui_menubg.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1001.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1002.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1003.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1004.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1005.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1006.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1007.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1008.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1009.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1010.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1011.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1012.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1013.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1014.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1015.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1016.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1017.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1018.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1019.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1020.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1021.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1022.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1023.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1024.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1025.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1026.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1027.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1028.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1029.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_noodles_1030.png</filename>
+            <filename>../LaMIan/美术/icon/game1_icon_track-14.png</filename>
+            <filename>../LaMIan/美术/icon/white_eat_food1.png</filename>
+            <filename>../LaMIan/美术/icon/white_eat_food2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
