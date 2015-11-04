@@ -5,6 +5,7 @@
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "EnmuResource.h"
+#include "Json.h"
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;

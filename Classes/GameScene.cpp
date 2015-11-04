@@ -28,6 +28,7 @@ bool GameScene::init()
     {
         return false;
     }
+	Json::getInstance()->setJson("123");
     rootNode = CSLoader::createNode("GameScene.csb");
     addChild(rootNode);
 
