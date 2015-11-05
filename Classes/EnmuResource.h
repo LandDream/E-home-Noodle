@@ -15,3 +15,11 @@ enum e_Food_Basket
 	e_food_chicken,
 	e_food_mushrooms,
 };
+
+enum e_Customer_State
+{
+	e_Customer_State_None,
+	e_Customer_State_Wait,
+	e_Customer_State_Eating,
+};
+

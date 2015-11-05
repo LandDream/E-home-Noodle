@@ -5,6 +5,7 @@
 #include "ui/CocosGUI.h"
 #include "EnmuResource.h"
 #include "Customer.h"
+#include "Noodle.h"
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;
@@ -26,14 +27,15 @@ public:
 	void cookBook(Ref* pSender);
 	void PhoneFood(Ref* pSender);
 	bool isTureFood(int base_food[12]);
-	void comeCustomer();
+	void comeCustomer(int nID);
 	std::string getFoodNameByTag(int nTag);
 private:
+	Node* rootNode;
 	std::vector<Sprite*> vec_track;
-	std::vector<Sprite*> vec_noodle;
+	std::vector<Noodle*> vec_noodle;
 	std::vector<Node*> vec_customer;
 	std::map<int,Customer*> map_customer;
 	int array_food[12];
 	int chooose_food_num;
-	Node* rootNode;
+	
 };

@@ -1,7 +1,10 @@
 #include "GameScene.h"
 
 #define TRACK_LONG 23
-#define CHOOSE_FOOD_NUM 6
+#define MAX_CHOOSE_FOOD 6
+#define MAX_CUSTOMER 5
+#define MOVE_SPEED 3
+
 Scene* GameScene::createScene()
 {
     auto scene = Scene::create();
@@ -72,7 +75,7 @@ bool GameScene::init()
 		button->addClickEventListener(CC_CALLBACK_1(GameScene::chooseCake, this));
 	}
 	//角色心情提示
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < MAX_CUSTOMER; i++)
 	{
 		Node* customer_node = dynamic_cast<Node*>(rootNode->getChildByName("Customer")->getChildByTag(i + 1));
 		vec_customer.push_back(customer_node);
@@ -86,7 +89,7 @@ void GameScene::chooseFood(Ref* pSender)
 {
 	Button* button = dynamic_cast<Button*>(pSender);
 	int foodTag = button->getTag();
-	if (array_food[foodTag] == 1 || chooose_food_num >= CHOOSE_FOOD_NUM)
+	if (array_food[foodTag] == 1 || chooose_food_num >= MAX_CHOOSE_FOOD)
 	{
 		return;
 	}
@@ -101,6 +104,7 @@ void GameScene::chooseFood(Ref* pSender)
 
 void GameScene::update(float delta)
 {
+	float pos = vec_customer[0]->getPositionX() + 667;
 	//传送带
 	for (auto itr : vec_track)
 	{
@@ -108,27 +112,52 @@ void GameScene::update(float delta)
 		{
 			itr->setPositionX(itr->getPositionX() + 1427);
 		}
-		itr->setPositionX(itr->getPositionX() - 3);
+		itr->setPositionX(itr->getPositionX() - MOVE_SPEED);
 	}
 	//面条		
-	for (std::vector<Sprite*>::iterator itr = vec_noodle.begin(); itr != vec_noodle.end();)
+	for (std::vector<Noodle*>::iterator itr = vec_noodle.begin(); itr != vec_noodle.end();)
 	{
+		bool is_noodle_none = false;
 		if ((*itr)->getPositionX() <= -60)
 		{
+			is_noodle_none = true;
+		}
+		else
+		{
+			(*itr)->setPositionX((*itr)->getPositionX() - MOVE_SPEED);
+			if ((*itr)->getNoodleState())//面条是制作成功的
+			{
+				for (int i = 0; i < MAX_CUSTOMER; i++)
+				{
+					if (map_customer[i])
+					{
+						float pos = (*itr)->getPositionX() - vec_customer[i]->getPositionX() - 667;
+						if (pos < 64 && pos > -64)
+						{
+							is_noodle_none = true;
+							map_customer[i]->setStateEating();//顾客吃了，换状态
+						}
+					}
+				}
+			}
+		}
+		if (is_noodle_none)
+		{
+			this->removeChild((*itr));
 			itr = vec_noodle.erase(itr);
 		}
 		else
 		{
-			(*itr)->setPositionX((*itr)->getPositionX() - 3);
 			itr++;
 		}
 	}
 	//顾客
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < MAX_CUSTOMER; i++)
 	{
 		if (map_customer[i])
 		{
-			if (map_customer[i]->spendTime(delta))
+			if (map_customer[i]->getCustomerState() == e_Customer_State_Wait && map_customer[i]->spendWaitTime(delta) || 
+				map_customer[i]->getCustomerState() == e_Customer_State_Eating && map_customer[i]->spendEatTime(delta))
 			{
 				//删除顾客
 				this->removeChild(map_customer[i]);
@@ -203,10 +232,14 @@ void GameScene::makeFood(Ref* pSender)
 	
 	clearFood();
 	//上面
-	Sprite* spr_noodle = Sprite::createWithSpriteFrameName(is_true ? "game1_icon_yangchunmian.png" : "game1_icon_orderbg.png");
-	spr_noodle->setPosition(Vec2(1400, 350));
-	this->addChild(spr_noodle);
-	vec_noodle.push_back(spr_noodle);
+	
+	//Sprite* spr_noodle = Sprite::createWithSpriteFrameName(is_true ? "game1_icon_yangchunmian.png" : "game1_icon_orderbg.png");
+	//spr_noodle->setPosition(Vec2(1400, 350));
+	//this->addChild(spr_noodle);
+	Noodle* noodle = Noodle::createNoodle(is_true);
+	noodle->setPosition(Vec2(1400, 350));
+	this->addChild(noodle);
+	vec_noodle.push_back(noodle);
 }
 
 //扔掉食材
@@ -227,7 +260,7 @@ void GameScene::cookBook(Ref* pSender)
 //电话
 void GameScene::PhoneFood(Ref * pSender)
 {
-	comeCustomer();
+	comeCustomer(4);
 }
 //咖啡
 void GameScene::chooseCake(Ref* pSender)
@@ -255,17 +288,17 @@ bool GameScene::isTureFood(int base_food[12])
 	return is_true;
 }
 //来顾客
-void GameScene::comeCustomer()
+void GameScene::comeCustomer(int nID)
 {
-	if (map_customer[0])
+	if (nID > MAX_CUSTOMER - 1 || nID < 0 ||map_customer[nID])
 	{
 		return;
 	}
-	Customer* customer = Customer::createCustomer(vec_customer[0]);
+	Customer* customer = Customer::createCustomer(vec_customer[nID]);
 	this->addChild(customer);
 	customer->setWaitTime(10.f);
 
-	map_customer[0] = customer;
+	map_customer[nID] = customer;
 }
 //清理案板
 void GameScene::clearFood()//清除案板

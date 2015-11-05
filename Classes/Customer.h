@@ -1,12 +1,8 @@
 #pragma once
 
 #include "cocos2d.h"
-#include "cocostudio/CocoStudio.h"
-#include "ui/CocosGUI.h"
 #include "EnmuResource.h"
 USING_NS_CC;
-using namespace cocostudio::timeline;
-using namespace ui;
 class Customer : public Node
 {
 public:
@@ -16,14 +12,20 @@ public:
 	~Customer();
 	static Customer* createCustomer(Node* customer_node);
 	void setWaitTime(float fTime);
-	bool spendTime(float fTime);
+	bool spendWaitTime(float fTime);
+	bool spendEatTime(float fTime);
 	void setCustomer(Node* customer);
+	void setStateEating();
 	int patientLevel();
-	int nNum;
+	CC_SYNTHESIZE(e_Customer_State, e_customer_state, CustomerState);
+
+private:
 	float fAllTime;
-	float fNowTime;
-	Node* customer_man;
+	float fWaitTime;
+	float fEatTime;
+	Sprite* customer_man;
 	Node* customer_tip;
 	Node* self_customer;
+
 };
 

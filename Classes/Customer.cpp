@@ -3,11 +3,12 @@
 Customer::Customer()
 {
 	fAllTime = 0.f;
-	fNowTime = 0.f;
-	nNum = 0;
+	fWaitTime = 0.f;
+	fEatTime = 3.0f;
 	customer_man = nullptr;
 	customer_tip = nullptr;
 	self_customer = nullptr;
+	e_customer_state = e_Customer_State_None;
 }
 
 Customer::~Customer()
@@ -27,12 +28,12 @@ Customer* Customer::createCustomer(Node* customer_node)
 void Customer::setWaitTime(float fTime)
 {
 	fAllTime = fTime;
-	fNowTime = fTime;
+	fWaitTime = fTime;
 }
 
-bool Customer::spendTime(float fTime)
+bool Customer::spendWaitTime(float fTime)
 {
-	fNowTime -= fTime;
+	fWaitTime -= fTime;
 
 	bool is_end = false;
 	int nLevel = patientLevel();
@@ -60,13 +61,34 @@ bool Customer::spendTime(float fTime)
 	return is_end;
 }
 
+bool Customer::spendEatTime(float fTime)
+{
+	fEatTime -= fTime;
+	bool is_end = false;
+	if (fEatTime<0.f)
+	{
+		customer_tip->setVisible(false);
+		customer_man->setVisible(false);
+		for (int i = 0; i < 5; i++)//ÄÍÐÄÂú
+		{
+			customer_tip->getChildByTag(i + 1)->getChildByName("heart_red")->setVisible(true);
+			customer_tip->getChildByTag(i + 1)->getChildByName("heart_half")->setVisible(false);
+		}
+
+		is_end = true;
+	}
+	return is_end;
+}
+
 void Customer::setCustomer(Node* customer_node)
 {
 	self_customer = customer_node;
 	self_customer->retain();
 
-	customer_man = self_customer->getChildByName("man");
+	customer_man = dynamic_cast<Sprite*>(self_customer->getChildByName("man"));
 	customer_man->retain();
+	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("white_eat_food1.png");
+	customer_man->setDisplayFrame(frame_eat);
 	customer_man->setVisible(true);
 
 	customer_tip = self_customer->getChildByName("tip");
@@ -79,7 +101,7 @@ int Customer::patientLevel()
 	int nLevel = -1;
 	for (int i = 0; i <11; i++)
 	{
-		if (fNowTime > fAllTime * MAX((9.5f - i), 0.f) * 0.1)
+		if (fWaitTime > fAllTime * MAX((9.5f - i), 0.f) * 0.1)
 		{
 			nLevel = 10 - i;
 			break;
@@ -88,12 +110,20 @@ int Customer::patientLevel()
 	return nLevel;
 }
 
+void Customer::setStateEating()
+{
+	setCustomerState(e_Customer_State_Eating);
+	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("white_eat_food2.png");
+	customer_man->setDisplayFrame(frame_eat);
+}
+
 bool Customer::init()
 {
     if ( !Node::init() )
     {
         return false;
     }
+	setCustomerState(e_Customer_State_Wait);
 
     return true;
 }
