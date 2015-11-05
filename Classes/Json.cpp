@@ -27,6 +27,7 @@ const char * Json::getJson(const char * name, int num, const char * str)
 	if (doc.Parse<0>(data.c_str()).HasParseError())
 	{
 		cout << "error" << endl;
+		return NULL;
 	}
 
 	if (doc[num].IsObject())
@@ -54,3 +55,40 @@ const char * Json::getJson(const char * name, int num, const char * str)
 	}
 	return _str;
 }
+
+int Json::StorageStar(int Checkpoint, int StarNum)
+{
+	Checkpoint--;
+	string path = CCFileUtils::sharedFileUtils()->fullPathForFilename("res/STORAGE.json");
+	string data = FileUtils::getInstance()->getStringFromFile(path);
+	Document doc;
+	doc.Parse<rapidjson::kParseDefaultFlags>(data.c_str());
+	if (doc.Parse<0>(data.c_str()).HasParseError())
+	{
+		cout << "error" << endl;
+		return NULL;
+	}
+	if (doc[Checkpoint].IsObject())
+	{
+		if (doc[Checkpoint]["StarNum"].IsNumber())
+		{
+			doc[Checkpoint]["StarNum"].SetInt(StarNum);
+		}
+	}
+	rapidjson::StringBuffer buffer;
+	rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
+	doc.Accept(writer);
+	FILE * file = fopen(path.c_str(), "w");
+	if (file) {
+		fputs(buffer.GetString(), file);
+		fclose(file);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
