@@ -2,6 +2,7 @@
 #define __JSON__
 
 #include <iostream>
+using namespace std;
 #include "cocos2d.h"
 using namespace cocos2d;
 
@@ -15,11 +16,10 @@ class Json
 {
 private:
 	Json();
-	char * _str;
+	const char * _str;
 public:
 	static Json * getInstance();
-	void setJson(const char * str);
-	const char * getJson();
+	const char * getJson(const char * name,int num, const char * str);
 
 };
 

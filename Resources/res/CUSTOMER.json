@@ -1,6 +1,50 @@
 [
 	{
-    "ID": "2",
-    "µ¿æﬂ√˚":"∏ﬂº∂“Œ◊”"
+		"CUSTOMER_ID":1,
+		"CUSTOMER_NAME":"ÊΩÆÁî∑",
+		"WAIT_TIME":30,
+		"HAPPY_BONUS":6,
+		"REFLESH_TIME":2,
+		"PUNISH_TIME":2
+	},
+	{
+		"CUSTOMER_ID":2,
+		"CUSTOMER_NAME":"Â•≥ÁôΩÈ¢Ü",
+		"WAIT_TIME":30,
+		"HAPPY_BONUS":8,
+		"REFLESH_TIME":4,
+		"PUNISH_TIME":4
+	},
+	{
+		"CUSTOMER_ID":3,
+		"CUSTOMER_NAME":"È∏£‰∫∫",
+		"WAIT_TIME":33,
+		"HAPPY_BONUS":8,
+		"REFLESH_TIME":2,
+		"PUNISH_TIME":3
+	},
+	{
+		"CUSTOMER_ID":4,
+		"CUSTOMER_NAME":"ÈõèÁî∞",
+		"WAIT_TIME":33,
+		"HAPPY_BONUS":10,
+		"REFLESH_TIME":4,
+		"PUNISH_TIME":6
+	},
+	{
+		"CUSTOMER_ID":5,
+		"CUSTOMER_NAME":"ÁÜäÁå´Âêõ",
+		"WAIT_TIME":36,
+		"HAPPY_BONUS":10,
+		"REFLESH_TIME":2,
+		"PUNISH_TIME":6
+	},
+	{
+		"CUSTOMER_ID":6,
+		"CUSTOMER_NAME":"Â∞èE",
+		"WAIT_TIME":36,
+		"HAPPY_BONUS":15,
+		"REFLESH_TIME":4,
+		"PUNISH_TIME":9
 	}
 ]
