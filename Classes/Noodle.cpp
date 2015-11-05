@@ -22,7 +22,7 @@ void Noodle::setNoodleTpye(int nID)
 	if (nID == 0)
 	{
 		b_noodle_state = false;
-		str_noodle = String::createWithFormat("game1_icon_yangchunmian.png");
+		str_noodle = String::createWithFormat("game1_icon_orderbg.png");
 	}
 	else if (nID < 10)
 	{

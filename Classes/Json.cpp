@@ -4,8 +4,13 @@ static Json * _intance = nullptr;
 Json::Json()
 {
 	_str = "";
+	vec_struct_noodles.clear();
+	str_noodles = nullptr;
 }
-
+Json::~Json()
+{
+	delete str_noodles;
+}
 Json * Json::getInstance()
 {
 	if (_intance == nullptr)
@@ -17,9 +22,7 @@ Json * Json::getInstance()
 
 const char * Json::getJson(const char * name, int num, const char * str)
 {
-	string JsonName = String::createWithFormat("res/%s.json", name)->getCString();
-	//string JsonName = "res/CUSTOMER.json";
-	//JsonName.replace(JsonName.find("CUSTOMER"), sizeof("CUSTOMER") - 1, name);
+	string JsonName = String::createWithFormat("data/%s.json", name)->getCString();
 
 	string path = CCFileUtils::sharedFileUtils()->fullPathForFilename(JsonName);
 	string data = FileUtils::getInstance()->getStringFromFile(path);
@@ -35,17 +38,17 @@ const char * Json::getJson(const char * name, int num, const char * str)
 	{
 		if (doc[num][str].IsObject())
 		{
-			log("%s", doc[num][str].GetString());
+			CCLOG("%s", doc[num][str].GetString());
 			_str = doc[num][str].GetString();
 		}
 		if (doc[num][str].IsNumber())
 		{
-			log("%d", doc[num][str].GetInt());
+			CCLOG("%d", doc[num][str].GetInt());
 			_str = String::createWithFormat("%d", doc[num][str].GetInt())->getCString();
 		}
 		if (doc[num][str].IsString())
 		{
-			log("%s", doc[num][str].GetString());
+			CCLOG("%s", doc[num][str].GetString());
 			_str = doc[num][str].GetString();
 		}
 	}
@@ -85,4 +88,63 @@ int Json::StorageStar(int Checkpoint, int StarNum)
 		fclose(file);
 	}
 	return 0;
+}
+
+
+void Json::readJson()
+{
+	makeCookBook();
+}
+
+void Json::makeCookBook()
+{
+	for (int i = 0; i < 30; i++)
+	{
+		str_noodles = nullptr;
+		str_noodles = new struct_NOODLES;
+
+		const char * c_json = getJson("NOODLES", i, "NOODLE_ID");
+		str_noodles->NOODLE_ID = std::atoi(c_json);
+
+		str_noodles->NOODLE_NAME = getJson("NOODLES", i, "NOODLE_NAME");
+
+		str_noodles->WORK_TIME = getJson("NOODLES", i, "WORK_TIME");
+
+		str_noodles->SOLD_PRICE = getJson("NOODLES", i, "SOLD_PRICE");
+
+		for (int j = 0; j < 12; j++)
+		{
+			String* str_food = String::createWithFormat("FOOD_ID_%d", j + 1);
+			c_json = getJson("NOODLES", i, str_food->getCString());
+			str_noodles->FOOD[j] = std::atoi(c_json);
+		}
+		
+		vec_struct_noodles.push_back(str_noodles);
+	}
+}
+
+int Json::getNoodlesID(int (&array_food)[12])
+{
+	assert(vec_struct_noodles.size() >= 0, "NOODLES.json READ FAILED");
+
+	int n_id = 0;
+	for (int i = 0; i < vec_struct_noodles.size(); i++)
+	{
+		bool is_success = true;
+		for (int j = 0; j < 12; j++)
+		{
+			if (array_food[j] != vec_struct_noodles[i]->FOOD[j])
+			{
+				is_success = false;
+				break;;
+			}
+		}
+		if (is_success)
+		{
+			n_id = i + 1;
+			break;
+		}
+	}
+	
+	return n_id;
 }

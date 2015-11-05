@@ -104,7 +104,6 @@ void GameScene::chooseFood(Ref* pSender)
 
 void GameScene::update(float delta)
 {
-	float pos = vec_customer[0]->getPositionX() + 667;
 	//传送带
 	for (auto itr : vec_track)
 	{
@@ -223,20 +222,11 @@ void GameScene::makeFood(Ref* pSender)
 		return;
 	}
 
-	//配方
-	int base_food[12];
-	memset(base_food, 0, sizeof(base_food));
-	base_food[0] = 1;
-	base_food[1] = 1;
-	bool is_true = isTureFood(base_food);
+	int noodle_id = Json::getInstance()->getNoodlesID(array_food);
 	
 	clearFood();
 	//上面
-	
-	//Sprite* spr_noodle = Sprite::createWithSpriteFrameName(is_true ? "game1_icon_yangchunmian.png" : "game1_icon_orderbg.png");
-	//spr_noodle->setPosition(Vec2(1400, 350));
-	//this->addChild(spr_noodle);
-	Noodle* noodle = Noodle::createNoodle(is_true);
+	Noodle* noodle = Noodle::createNoodle(noodle_id);
 	noodle->setPosition(Vec2(1400, 350));
 	this->addChild(noodle);
 	vec_noodle.push_back(noodle);

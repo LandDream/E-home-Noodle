@@ -2,44 +2,33 @@
 #define __JSON__
 
 #include <iostream>
-using namespace std;
 #include "cocos2d.h"
-using namespace cocos2d;
-
 #include "json/document.h"
 #include "json/rapidjson.h"
 #include "json/writer.h"
 #include "json/stringbuffer.h"
-using namespace rapidjson;
-struct struct_NOODLES
-{
-	int NOODLE_ID = 0;
-	std::string NOODLE_NAME = "";
-	int FOOD_ID_1 = 0;
-	int FOOD_ID_2 = 0;
-	int FOOD_ID_3 = 0;
-	int FOOD_ID_4 = 0;
-	int FOOD_ID_5 = 0;
-	int FOOD_ID_6 = 0;
-	int FOOD_ID_7 = 0;
-	int FOOD_ID_8 = 0;
-	int FOOD_ID_9 = 0;
-	int FOOD_ID_10 = 0;
-	int FOOD_ID_11 = 0;
-	int FOOD_ID_12 = 0;
-	std::string WORK_TIME = "";
-	std::string SOLD_PRICE = "";
-};
+#include "EnmuResource.h"
 
+using namespace cocos2d;
+using namespace std;
+using namespace rapidjson;
 class Json
 {
 private:
 	Json();
+	~Json();
 	const char * _str;
+	struct_NOODLES* str_noodles;
+	std::vector<struct_NOODLES*> vec_struct_noodles;
 public:
 	static Json * getInstance();
 	const char * getJson(const char * name,int num, const char * str);
 	int StorageStar(int Checkpoint, int StarNum);
+
+	std::vector<struct_NOODLES*> getCookBook();
+	void makeCookBook();
+	int getNoodlesID(int (&array_food)[12]);
+	void readJson();
 };
 
 #endif

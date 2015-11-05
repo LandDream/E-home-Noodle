@@ -6,6 +6,7 @@
 #include "EnmuResource.h"
 #include "Customer.h"
 #include "Noodle.h"
+#include "Json.h"
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;

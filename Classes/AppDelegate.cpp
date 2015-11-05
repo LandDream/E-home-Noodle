@@ -1,6 +1,5 @@
 #include "AppDelegate.h"
 #include "GameScene.h"
-#include "GameData.h"
 
 USING_NS_CC;
 
@@ -35,8 +34,8 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     FileUtils::getInstance()->addSearchPath("res");
 
-	GameData::getInstance();
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("res/GameScene.p;list");
+	Json::getInstance()->readJson();
 
     auto scene = GameScene::createScene();
     director->runWithScene(scene);
