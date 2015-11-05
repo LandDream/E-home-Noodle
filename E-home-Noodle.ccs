@@ -48,13 +48,46 @@
           <PlistImageFile Name="game_ui_menu_time.png" Key="game_ui_menu_time.png" />
           <PlistImageFile Name="game_ui_menubg.png" Key="game_ui_menubg.png" />
           <PlistImageFile Name="game_ui_table.png" Key="game_ui_table.png" />
+          <PlistImageFile Name="game1_icon_noodles_1001.png" Key="game1_icon_noodles_1001.png" />
+          <PlistImageFile Name="game1_icon_noodles_1002.png" Key="game1_icon_noodles_1002.png" />
+          <PlistImageFile Name="game1_icon_noodles_1003.png" Key="game1_icon_noodles_1003.png" />
+          <PlistImageFile Name="game1_icon_noodles_1004.png" Key="game1_icon_noodles_1004.png" />
+          <PlistImageFile Name="game1_icon_noodles_1005.png" Key="game1_icon_noodles_1005.png" />
+          <PlistImageFile Name="game1_icon_noodles_1006.png" Key="game1_icon_noodles_1006.png" />
+          <PlistImageFile Name="game1_icon_noodles_1007.png" Key="game1_icon_noodles_1007.png" />
+          <PlistImageFile Name="game1_icon_noodles_1008.png" Key="game1_icon_noodles_1008.png" />
+          <PlistImageFile Name="game1_icon_noodles_1009.png" Key="game1_icon_noodles_1009.png" />
+          <PlistImageFile Name="game1_icon_noodles_1010.png" Key="game1_icon_noodles_1010.png" />
+          <PlistImageFile Name="game1_icon_noodles_1011.png" Key="game1_icon_noodles_1011.png" />
+          <PlistImageFile Name="game1_icon_noodles_1012.png" Key="game1_icon_noodles_1012.png" />
+          <PlistImageFile Name="game1_icon_noodles_1013.png" Key="game1_icon_noodles_1013.png" />
+          <PlistImageFile Name="game1_icon_noodles_1014.png" Key="game1_icon_noodles_1014.png" />
+          <PlistImageFile Name="game1_icon_noodles_1015.png" Key="game1_icon_noodles_1015.png" />
+          <PlistImageFile Name="game1_icon_noodles_1016.png" Key="game1_icon_noodles_1016.png" />
+          <PlistImageFile Name="game1_icon_noodles_1017.png" Key="game1_icon_noodles_1017.png" />
+          <PlistImageFile Name="game1_icon_noodles_1018.png" Key="game1_icon_noodles_1018.png" />
+          <PlistImageFile Name="game1_icon_noodles_1019.png" Key="game1_icon_noodles_1019.png" />
+          <PlistImageFile Name="game1_icon_noodles_1020.png" Key="game1_icon_noodles_1020.png" />
+          <PlistImageFile Name="game1_icon_noodles_1021.png" Key="game1_icon_noodles_1021.png" />
+          <PlistImageFile Name="game1_icon_noodles_1022.png" Key="game1_icon_noodles_1022.png" />
+          <PlistImageFile Name="game1_icon_noodles_1023.png" Key="game1_icon_noodles_1023.png" />
+          <PlistImageFile Name="game1_icon_noodles_1024.png" Key="game1_icon_noodles_1024.png" />
+          <PlistImageFile Name="game1_icon_noodles_1025.png" Key="game1_icon_noodles_1025.png" />
+          <PlistImageFile Name="game1_icon_noodles_1026.png" Key="game1_icon_noodles_1026.png" />
+          <PlistImageFile Name="game1_icon_noodles_1027.png" Key="game1_icon_noodles_1027.png" />
+          <PlistImageFile Name="game1_icon_noodles_1028.png" Key="game1_icon_noodles_1028.png" />
+          <PlistImageFile Name="game1_icon_noodles_1029.png" Key="game1_icon_noodles_1029.png" />
+          <PlistImageFile Name="game1_icon_noodles_1030.png" Key="game1_icon_noodles_1030.png" />
+          <PlistImageFile Name="game1_icon_track-14.png" Key="game1_icon_track-14.png" />
+          <PlistImageFile Name="white_eat_food1.png" Key="white_eat_food1.png" />
+          <PlistImageFile Name="white_eat_food2.png" Key="white_eat_food2.png" />
         </PlistImageFolder>
         <Project Name="GameScene.csd" Type="Scene" />
         <Project Name="FoodBasket.csd" Type="Node" />
         <Project Name="Cake.csd" Type="Node" />
         <Project Name="Heart.csd" Type="Node" />
-        <Image Name="BG.png" />
         <Project Name="Bar.csd" Type="Node" />
+        <Project Name="Customer.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

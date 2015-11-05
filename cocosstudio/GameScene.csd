@@ -6,26 +6,6 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="1334.0000" Y="750.0000" />
         <Children>
-          <AbstractNodeData Name="Image_3" ActionTag="-2140521397" Tag="186" IconVisible="False" TopMargin="482.0000" Scale9Enable="True" LeftEage="19" RightEage="19" TopEage="96" BottomEage="96" Scale9OriginX="19" Scale9OriginY="96" Scale9Width="22" Scale9Height="100" ctype="ImageViewObjectData">
-            <Size X="1334.0000" Y="268.0000" />
-            <AnchorPoint />
-            <Position />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="1.0000" Y="0.3573" />
-            <FileData Type="PlistSubImage" Path="game_ui_table.png" Plist="GameScene.plist" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Image_29" ActionTag="-875116159" Tag="377" IconVisible="False" LeftMargin="-0.1628" RightMargin="0.1628" TopMargin="443.5887" BottomMargin="268.4113" Scale9Enable="True" LeftEage="20" RightEage="20" TopEage="12" BottomEage="12" Scale9OriginX="20" Scale9OriginY="12" Scale9Width="22" Scale9Height="14" ctype="ImageViewObjectData">
-            <Size X="1334.0000" Y="38.0000" />
-            <AnchorPoint />
-            <Position X="-0.1628" Y="268.4113" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="-0.0001" Y="0.3579" />
-            <PreSize X="1.0000" Y="0.0507" />
-            <FileData Type="PlistSubImage" Path="game1_icon_track_edge02.png" Plist="GameScene.plist" />
-          </AbstractNodeData>
           <AbstractNodeData Name="Bar" ActionTag="-400519402" Tag="318" IconVisible="True" LeftMargin="666.1539" RightMargin="667.8461" TopMargin="25.8572" BottomMargin="724.1428" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <AnchorPoint />
@@ -36,549 +16,68 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="Bar.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Tip" ActionTag="519803100" Tag="583" IconVisible="True" LeftMargin="616.3965" RightMargin="717.6035" TopMargin="221.2316" BottomMargin="528.7684" ctype="SingleNodeObjectData">
+          <AbstractNodeData Name="Customer" ActionTag="1651599867" Tag="703" IconVisible="True" LeftMargin="667.0000" RightMargin="667.0000" TopMargin="360.0000" BottomMargin="390.0000" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
-              <AbstractNodeData Name="tip_1" ActionTag="1460033629" VisibleForFrame="False" Tag="1" IconVisible="True" LeftMargin="-420.0000" RightMargin="420.0000" ctype="SingleNodeObjectData">
+              <AbstractNodeData Name="Customer_1" ActionTag="1788036628" Tag="1" IconVisible="True" LeftMargin="-400.0000" RightMargin="400.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
-                <Children>
-                  <AbstractNodeData Name="game1_icon_orderbg_21" ActionTag="1743138401" Tag="414" IconVisible="False" LeftMargin="-67.5000" RightMargin="-65.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
-                    <Size X="133.0000" Y="122.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-1.0000" Y="5.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_orderbg.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Image_2" ActionTag="-1216667918" Tag="415" IconVisible="False" LeftMargin="-75.0000" RightMargin="885.0000" TopMargin="565.0000" BottomMargin="-75.0000" Scale9Enable="True" LeftEage="25" RightEage="50" TopEage="27" BottomEage="27" Scale9OriginX="25" Scale9OriginY="27" Scale9Width="2" Scale9Height="28" ctype="ImageViewObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1563" Y="0.2344" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_order_edge.png" Plist="GameScene.plist" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="game1_icon_yangchunmian_20" ActionTag="1117178115" Tag="416" IconVisible="False" LeftMargin="-62.0000" RightMargin="-56.0000" TopMargin="-60.5000" BottomMargin="-36.5000" ctype="SpriteObjectData">
-                    <Size X="118.0000" Y="97.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-3.0000" Y="12.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_yangchunmian.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_1" ActionTag="899046775" Tag="1" IconVisible="True" LeftMargin="-50.0000" RightMargin="50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_2" ActionTag="-1191853447" Tag="2" IconVisible="True" LeftMargin="-25.0000" RightMargin="25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_3" ActionTag="-940266093" Tag="3" IconVisible="True" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_4" ActionTag="1148132099" Tag="4" IconVisible="True" LeftMargin="25.0000" RightMargin="-25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_5" ActionTag="774600383" Tag="5" IconVisible="True" LeftMargin="50.0000" RightMargin="-50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
-                <Position X="-420.0000" />
+                <Position X="-400.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="Customer.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tip_2" ActionTag="-1546876071" VisibleForFrame="False" Tag="2" IconVisible="True" LeftMargin="-210.0000" RightMargin="210.0000" ctype="SingleNodeObjectData">
+              <AbstractNodeData Name="Customer_2" ActionTag="187676690" Tag="2" IconVisible="True" LeftMargin="-200.0000" RightMargin="200.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
-                <Children>
-                  <AbstractNodeData Name="game1_icon_orderbg_21" ActionTag="-1905764816" Tag="448" IconVisible="False" LeftMargin="-67.5000" RightMargin="-65.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
-                    <Size X="133.0000" Y="122.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-1.0000" Y="5.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_orderbg.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Image_2" ActionTag="1311901737" Tag="449" IconVisible="False" LeftMargin="-75.0000" RightMargin="885.0000" TopMargin="565.0000" BottomMargin="-75.0000" Scale9Enable="True" LeftEage="25" RightEage="50" TopEage="27" BottomEage="27" Scale9OriginX="25" Scale9OriginY="27" Scale9Width="2" Scale9Height="28" ctype="ImageViewObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1563" Y="0.2344" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_order_edge.png" Plist="GameScene.plist" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="game1_icon_yangchunmian_20" ActionTag="437992012" Tag="450" IconVisible="False" LeftMargin="-62.0000" RightMargin="-56.0000" TopMargin="-60.5000" BottomMargin="-36.5000" ctype="SpriteObjectData">
-                    <Size X="118.0000" Y="97.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-3.0000" Y="12.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_yangchunmian.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_1" ActionTag="-1573097052" Tag="1" IconVisible="True" LeftMargin="-50.0000" RightMargin="50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_2" ActionTag="339764424" Tag="2" IconVisible="True" LeftMargin="-25.0000" RightMargin="25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_3" ActionTag="-43678814" Tag="3" IconVisible="True" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_4" ActionTag="-1556748987" Tag="4" IconVisible="True" LeftMargin="25.0000" RightMargin="-25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_5" ActionTag="-1413844000" Tag="5" IconVisible="True" LeftMargin="50.0000" RightMargin="-50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
-                <Position X="-210.0000" />
+                <Position X="-200.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="Customer.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tip_3" ActionTag="-1379625458" VisibleForFrame="False" Tag="3" IconVisible="True" ctype="SingleNodeObjectData">
+              <AbstractNodeData Name="Customer_3" ActionTag="-1467260015" Tag="3" IconVisible="True" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
-                <Children>
-                  <AbstractNodeData Name="game1_icon_orderbg_21" ActionTag="2093766647" Tag="482" IconVisible="False" LeftMargin="-67.5000" RightMargin="-65.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
-                    <Size X="133.0000" Y="122.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-1.0000" Y="5.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_orderbg.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Image_2" ActionTag="858195425" Tag="483" IconVisible="False" LeftMargin="-75.0000" RightMargin="885.0000" TopMargin="565.0000" BottomMargin="-75.0000" Scale9Enable="True" LeftEage="25" RightEage="50" TopEage="27" BottomEage="27" Scale9OriginX="25" Scale9OriginY="27" Scale9Width="2" Scale9Height="28" ctype="ImageViewObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1563" Y="0.2344" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_order_edge.png" Plist="GameScene.plist" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="game1_icon_yangchunmian_20" ActionTag="337218730" Tag="484" IconVisible="False" LeftMargin="-62.0000" RightMargin="-56.0000" TopMargin="-60.5000" BottomMargin="-36.5000" ctype="SpriteObjectData">
-                    <Size X="118.0000" Y="97.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-3.0000" Y="12.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_yangchunmian.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_1" ActionTag="-471643775" Tag="1" IconVisible="True" LeftMargin="-50.0000" RightMargin="50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_2" ActionTag="-672610610" Tag="2" IconVisible="True" LeftMargin="-25.0000" RightMargin="25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_3" ActionTag="-277026437" Tag="3" IconVisible="True" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_4" ActionTag="-969907822" Tag="4" IconVisible="True" LeftMargin="25.0000" RightMargin="-25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_5" ActionTag="-1981464164" Tag="5" IconVisible="True" LeftMargin="50.0000" RightMargin="-50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
                 <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="Customer.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tip_4" ActionTag="1032323460" VisibleForFrame="False" Tag="4" IconVisible="True" LeftMargin="210.0000" RightMargin="-210.0000" ctype="SingleNodeObjectData">
+              <AbstractNodeData Name="Customer_4" ActionTag="1169608567" Tag="4" IconVisible="True" LeftMargin="200.0000" RightMargin="-200.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
-                <Children>
-                  <AbstractNodeData Name="game1_icon_orderbg_21" ActionTag="-1300262783" Tag="516" IconVisible="False" LeftMargin="-67.5000" RightMargin="-65.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
-                    <Size X="133.0000" Y="122.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-1.0000" Y="5.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_orderbg.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Image_2" ActionTag="-1330948553" Tag="517" IconVisible="False" LeftMargin="-75.0000" RightMargin="885.0000" TopMargin="565.0000" BottomMargin="-75.0000" Scale9Enable="True" LeftEage="25" RightEage="50" TopEage="27" BottomEage="27" Scale9OriginX="25" Scale9OriginY="27" Scale9Width="2" Scale9Height="28" ctype="ImageViewObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1563" Y="0.2344" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_order_edge.png" Plist="GameScene.plist" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="game1_icon_yangchunmian_20" ActionTag="1086946479" Tag="518" IconVisible="False" LeftMargin="-62.0000" RightMargin="-56.0000" TopMargin="-60.5000" BottomMargin="-36.5000" ctype="SpriteObjectData">
-                    <Size X="118.0000" Y="97.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-3.0000" Y="12.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_yangchunmian.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_1" ActionTag="577226425" Tag="1" IconVisible="True" LeftMargin="-50.0000" RightMargin="50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_2" ActionTag="1473518517" Tag="2" IconVisible="True" LeftMargin="-25.0000" RightMargin="25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_3" ActionTag="-1270635043" Tag="3" IconVisible="True" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_4" ActionTag="-1466285002" Tag="4" IconVisible="True" LeftMargin="25.0000" RightMargin="-25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_5" ActionTag="730408511" Tag="5" IconVisible="True" LeftMargin="50.0000" RightMargin="-50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
-                <Position X="210.0000" />
+                <Position X="200.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="Customer.csd" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="tip_5" ActionTag="1778363845" VisibleForFrame="False" Tag="5" IconVisible="True" LeftMargin="420.0000" RightMargin="-420.0000" ctype="SingleNodeObjectData">
+              <AbstractNodeData Name="Customer_5" ActionTag="401798982" Tag="5" IconVisible="True" LeftMargin="400.0000" RightMargin="-400.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
                 <Size X="0.0000" Y="0.0000" />
-                <Children>
-                  <AbstractNodeData Name="game1_icon_orderbg_21" ActionTag="1523492459" Tag="550" IconVisible="False" LeftMargin="-67.5000" RightMargin="-65.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
-                    <Size X="133.0000" Y="122.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-1.0000" Y="5.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_orderbg.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="Image_2" ActionTag="-1894542342" Tag="551" IconVisible="False" LeftMargin="-75.0000" RightMargin="885.0000" TopMargin="565.0000" BottomMargin="-75.0000" Scale9Enable="True" LeftEage="25" RightEage="50" TopEage="27" BottomEage="27" Scale9OriginX="25" Scale9OriginY="27" Scale9Width="2" Scale9Height="28" ctype="ImageViewObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.1563" Y="0.2344" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_order_edge.png" Plist="GameScene.plist" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="game1_icon_yangchunmian_20" ActionTag="975922956" Tag="552" IconVisible="False" LeftMargin="-62.0000" RightMargin="-56.0000" TopMargin="-60.5000" BottomMargin="-36.5000" ctype="SpriteObjectData">
-                    <Size X="118.0000" Y="97.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="-3.0000" Y="12.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="PlistSubImage" Path="game1_icon_yangchunmian.png" Plist="GameScene.plist" />
-                    <BlendFunc Src="770" Dst="771" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_1" ActionTag="1194647235" Tag="1" IconVisible="True" LeftMargin="-50.0000" RightMargin="50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_2" ActionTag="-696567010" Tag="2" IconVisible="True" LeftMargin="-25.0000" RightMargin="25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="-25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_3" ActionTag="-551635240" Tag="3" IconVisible="True" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_4" ActionTag="661745157" Tag="4" IconVisible="True" LeftMargin="25.0000" RightMargin="-25.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="25.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="heart_5" ActionTag="1549752358" Tag="5" IconVisible="True" LeftMargin="50.0000" RightMargin="-50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-                    <Size X="0.0000" Y="0.0000" />
-                    <AnchorPoint />
-                    <Position X="50.0000" Y="-35.0000" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition />
-                    <PreSize X="0.0000" Y="0.0000" />
-                    <FileData Type="Normal" Path="Heart.csd" Plist="" />
-                  </AbstractNodeData>
-                </Children>
                 <AnchorPoint />
-                <Position X="420.0000" />
+                <Position X="400.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="Customer.csd" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
-            <Position X="616.3965" Y="528.7684" />
+            <Position X="667.0000" Y="390.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4621" Y="0.7050" />
+            <PrePosition X="0.5000" Y="0.5200" />
             <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="seat" ActionTag="1233551362" Tag="338" IconVisible="True" LeftMargin="631.3722" RightMargin="702.6278" TopMargin="379.2133" BottomMargin="370.7867" ctype="SingleNodeObjectData">
-            <Size X="0.0000" Y="0.0000" />
-            <Children>
-              <AbstractNodeData Name="game1_icon_seat_37" ActionTag="1356279484" Tag="248" IconVisible="False" LeftMargin="-493.5000" RightMargin="366.5000" TopMargin="-35.5000" BottomMargin="-35.5000" ctype="SpriteObjectData">
-                <Size X="127.0000" Y="71.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="-430.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_seat.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="game1_icon_seat_37_0" ActionTag="1678514103" Tag="339" IconVisible="False" LeftMargin="-280.5000" RightMargin="153.5000" TopMargin="-35.5000" BottomMargin="-35.5000" ctype="SpriteObjectData">
-                <Size X="127.0000" Y="71.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="-217.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_seat.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="game1_icon_seat_37_1" ActionTag="-559515724" Tag="340" IconVisible="False" LeftMargin="-63.5000" RightMargin="-63.5000" TopMargin="-35.5000" BottomMargin="-35.5000" ctype="SpriteObjectData">
-                <Size X="127.0000" Y="71.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_seat.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="game1_icon_seat_37_2" ActionTag="762670600" Tag="341" IconVisible="False" LeftMargin="153.5000" RightMargin="-280.5000" TopMargin="-35.5000" BottomMargin="-35.5000" ctype="SpriteObjectData">
-                <Size X="127.0000" Y="71.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="217.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_seat.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="game1_icon_seat_37_3" ActionTag="1595881334" Tag="342" IconVisible="False" LeftMargin="366.5000" RightMargin="-493.5000" TopMargin="-35.5000" BottomMargin="-35.5000" ctype="SpriteObjectData">
-                <Size X="127.0000" Y="71.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="430.0000" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
-                <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_seat.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-            </Children>
-            <AnchorPoint />
-            <Position X="631.3722" Y="370.7867" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4733" Y="0.4944" />
-            <PreSize X="0.0000" Y="0.0000" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Image_30" ActionTag="-1647272607" Tag="378" IconVisible="False" TopMargin="378.0000" BottomMargin="350.0000" Scale9Enable="True" LeftEage="20" RightEage="20" TopEage="7" BottomEage="7" Scale9OriginX="20" Scale9OriginY="7" Scale9Width="22" Scale9Height="8" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="borad_1" ActionTag="-1647272607" Tag="378" IconVisible="False" TopMargin="378.0000" BottomMargin="350.0000" Scale9Enable="True" LeftEage="20" RightEage="20" TopEage="7" BottomEage="7" Scale9OriginX="20" Scale9OriginY="7" Scale9Width="22" Scale9Height="8" ctype="ImageViewObjectData">
             <Size X="1334.0000" Y="22.0000" />
             <AnchorPoint />
             <Position Y="350.0000" />
@@ -587,6 +86,26 @@
             <PrePosition Y="0.4667" />
             <PreSize X="1.0000" Y="0.0293" />
             <FileData Type="PlistSubImage" Path="game1_icon_track_edge01.png" Plist="GameScene.plist" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="borad_2" ActionTag="-875116159" Tag="377" IconVisible="False" LeftMargin="-0.1628" RightMargin="0.1628" TopMargin="443.5887" BottomMargin="268.4113" Scale9Enable="True" LeftEage="20" RightEage="20" TopEage="12" BottomEage="12" Scale9OriginX="20" Scale9OriginY="12" Scale9Width="22" Scale9Height="14" ctype="ImageViewObjectData">
+            <Size X="1334.0000" Y="38.0000" />
+            <AnchorPoint />
+            <Position X="-0.1628" Y="268.4113" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="-0.0001" Y="0.3579" />
+            <PreSize X="1.0000" Y="0.0507" />
+            <FileData Type="PlistSubImage" Path="game1_icon_track_edge02.png" Plist="GameScene.plist" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="borad_3" ActionTag="-2140521397" Tag="186" IconVisible="False" TopMargin="482.0000" Scale9Enable="True" LeftEage="19" RightEage="19" TopEage="96" BottomEage="96" Scale9OriginX="19" Scale9OriginY="96" Scale9Width="22" Scale9Height="100" ctype="ImageViewObjectData">
+            <Size X="1334.0000" Y="268.0000" />
+            <AnchorPoint />
+            <Position />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="1.0000" Y="0.3573" />
+            <FileData Type="PlistSubImage" Path="game_ui_table.png" Plist="GameScene.plist" />
           </AbstractNodeData>
           <AbstractNodeData Name="FoodBasket" ActionTag="-2011494294" Tag="52" IconVisible="True" LeftMargin="1015.7158" RightMargin="318.2842" TopMargin="598.6606" BottomMargin="151.3394" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
@@ -597,46 +116,6 @@
             <PrePosition X="1.0580" Y="0.2365" />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="FoodBasket.csd" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Cake" ActionTag="-108477329" Tag="67" IconVisible="True" LeftMargin="538.8336" RightMargin="795.1664" TopMargin="526.3063" BottomMargin="223.6937" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
-            <Size X="0.0000" Y="0.0000" />
-            <AnchorPoint />
-            <Position X="538.8336" Y="223.6937" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5613" Y="0.3495" />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="Cake.csd" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="ashcan_btn" ActionTag="184304799" Tag="112" IconVisible="False" LeftMargin="170.7127" RightMargin="1091.2872" TopMargin="503.1407" BottomMargin="160.8593" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="42" Scale9Height="64" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="72.0000" Y="86.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="206.7127" Y="203.8593" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1550" Y="0.2718" />
-            <PreSize X="0.0750" Y="0.1344" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_ashcan.png" Plist="GameScene.plist" />
-            <NormalFileData Type="PlistSubImage" Path="game1_icon_ashcan.png" Plist="GameScene.plist" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="phone_btn" ActionTag="-381534722" Tag="122" IconVisible="False" LeftMargin="284.7605" RightMargin="585.2395" TopMargin="382.7399" BottomMargin="150.2601" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="60" Scale9Height="85" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="90.0000" Y="107.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="329.7605" Y="203.7601" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3435" Y="0.3184" />
-            <PreSize X="0.0938" Y="0.1672" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_phone.png" Plist="GameScene.plist" />
-            <NormalFileData Type="PlistSubImage" Path="game1_icon_phone.png" Plist="GameScene.plist" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
           <AbstractNodeData Name="cookbook_btn" ActionTag="1234607888" Tag="119" IconVisible="False" LeftMargin="705.7465" RightMargin="160.2535" TopMargin="361.0759" BottomMargin="189.9241" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="64" Scale9Height="67" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="94.0000" Y="89.0000" />
@@ -650,45 +129,6 @@
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="PlistSubImage" Path="game1_icon_cookbook.png" Plist="GameScene.plist" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_cookbook.png" Plist="GameScene.plist" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="make_btn" ActionTag="142267983" Tag="435" IconVisible="False" LeftMargin="138.5296" RightMargin="945.4704" TopMargin="615.4280" BottomMargin="52.5720" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="27" BottomEage="27" Scale9OriginX="14" Scale9OriginY="27" Scale9Width="15" Scale9Height="28" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="250.0000" Y="82.0000" />
-            <Children>
-              <AbstractNodeData Name="game1_icon_cook_dishes_18" ActionTag="-1749937720" Tag="117" IconVisible="False" LeftMargin="159.2213" RightMargin="20.7787" TopMargin="6.2849" BottomMargin="8.7151" ctype="SpriteObjectData">
-                <Size X="70.0000" Y="67.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="194.2213" Y="42.2151" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7769" Y="0.5148" />
-                <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_cook_dishes.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="game1_icon_cook_word_19" ActionTag="2034903087" Tag="118" IconVisible="False" LeftMargin="31.6452" RightMargin="120.3548" TopMargin="17.8617" BottomMargin="15.1383" ctype="SpriteObjectData">
-                <Size X="98.0000" Y="49.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="80.6452" Y="39.6383" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3226" Y="0.4834" />
-                <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_cook_word.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
-              </AbstractNodeData>
-            </Children>
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="263.5296" Y="93.5720" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1975" Y="0.1248" />
-            <PreSize X="0.1874" Y="0.1093" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_cook_dg.png" Plist="GameScene.plist" />
-            <NormalFileData Type="PlistSubImage" Path="game1_icon_cook_dg.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -779,6 +219,85 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4498" Y="0.1467" />
             <PreSize X="0.0000" Y="0.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Cake" ActionTag="-108477329" Tag="67" IconVisible="True" LeftMargin="538.8336" RightMargin="795.1664" TopMargin="526.3063" BottomMargin="223.6937" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">
+            <Size X="0.0000" Y="0.0000" />
+            <AnchorPoint />
+            <Position X="538.8336" Y="223.6937" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5613" Y="0.3495" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="Cake.csd" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="phone_btn" ActionTag="-381534722" Tag="122" IconVisible="False" LeftMargin="284.7605" RightMargin="585.2395" TopMargin="382.7399" BottomMargin="150.2601" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="60" Scale9Height="85" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="90.0000" Y="107.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="329.7605" Y="203.7601" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.3435" Y="0.3184" />
+            <PreSize X="0.0938" Y="0.1672" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="PlistSubImage" Path="game1_icon_phone.png" Plist="GameScene.plist" />
+            <NormalFileData Type="PlistSubImage" Path="game1_icon_phone.png" Plist="GameScene.plist" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ashcan_btn" ActionTag="184304799" Tag="112" IconVisible="False" LeftMargin="170.7127" RightMargin="1091.2872" TopMargin="503.1407" BottomMargin="160.8593" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="42" Scale9Height="64" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="72.0000" Y="86.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="206.7127" Y="203.8593" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.1550" Y="0.2718" />
+            <PreSize X="0.0750" Y="0.1344" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="PlistSubImage" Path="game1_icon_ashcan.png" Plist="GameScene.plist" />
+            <NormalFileData Type="PlistSubImage" Path="game1_icon_ashcan.png" Plist="GameScene.plist" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="make_btn" ActionTag="142267983" Tag="435" IconVisible="False" LeftMargin="138.5296" RightMargin="945.4704" TopMargin="615.4280" BottomMargin="52.5720" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="27" BottomEage="27" Scale9OriginX="14" Scale9OriginY="27" Scale9Width="15" Scale9Height="28" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="250.0000" Y="82.0000" />
+            <Children>
+              <AbstractNodeData Name="game1_icon_cook_dishes_18" ActionTag="-1749937720" Tag="117" IconVisible="False" LeftMargin="159.2213" RightMargin="20.7787" TopMargin="6.2849" BottomMargin="8.7151" ctype="SpriteObjectData">
+                <Size X="70.0000" Y="67.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="194.2213" Y="42.2151" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.7769" Y="0.5148" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="PlistSubImage" Path="game1_icon_cook_dishes.png" Plist="GameScene.plist" />
+                <BlendFunc Src="770" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="game1_icon_cook_word_19" ActionTag="2034903087" Tag="118" IconVisible="False" LeftMargin="31.6452" RightMargin="120.3548" TopMargin="17.8617" BottomMargin="15.1383" ctype="SpriteObjectData">
+                <Size X="98.0000" Y="49.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="80.6452" Y="39.6383" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.3226" Y="0.4834" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="PlistSubImage" Path="game1_icon_cook_word.png" Plist="GameScene.plist" />
+                <BlendFunc Src="770" Dst="771" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="263.5296" Y="93.5720" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.1975" Y="0.1248" />
+            <PreSize X="0.1874" Y="0.1093" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="PlistSubImage" Path="game1_icon_cook_dg.png" Plist="GameScene.plist" />
+            <NormalFileData Type="PlistSubImage" Path="game1_icon_cook_dg.png" Plist="GameScene.plist" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

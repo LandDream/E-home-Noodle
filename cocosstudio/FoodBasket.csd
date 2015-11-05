@@ -6,7 +6,7 @@
       <ObjectData Name="Node" Tag="2" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="game1_icon_plate_1" ActionTag="1132931102" Tag="33" IconVisible="False" LeftMargin="-197.0000" RightMargin="-197.0000" TopMargin="-115.0000" BottomMargin="-115.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="bg" ActionTag="1132931102" Tag="33" IconVisible="False" LeftMargin="-197.0000" RightMargin="-197.0000" TopMargin="-115.0000" BottomMargin="-115.0000" ctype="SpriteObjectData">
             <Size X="394.0000" Y="230.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />

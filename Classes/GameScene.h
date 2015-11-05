@@ -1,11 +1,10 @@
-#ifndef __GAMESCENE_SCENE_H__
-#define __GAMESCENE_SCENE_H__
+#pragma once
 
 #include "cocos2d.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "EnmuResource.h"
-#include "Json.h"
+#include "Customer.h"
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;
@@ -32,13 +31,9 @@ public:
 private:
 	std::vector<Sprite*> vec_track;
 	std::vector<Sprite*> vec_noodle;
-	std::map<int,Node*> vec_customer_tip;
-	std::map<int, float> vec_customer_time;
-
+	std::vector<Node*> vec_customer;
+	std::map<int,Customer*> map_customer;
 	int array_food[12];
-	int array_Customer[5];
 	int chooose_food_num;
 	Node* rootNode;
 };
-
-#endif

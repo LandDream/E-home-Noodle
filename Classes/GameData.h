@@ -1,5 +1,4 @@
-#ifndef __GAMEDATA_H__
-#define __GAMEDATA_H__
+#pragma once
 
 #include "cocos2d.h"
 USING_NS_CC;
@@ -12,4 +11,3 @@ public:
 	void saveData();
 };
 
-#endif

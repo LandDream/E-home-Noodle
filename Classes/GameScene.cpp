@@ -1,4 +1,5 @@
 #include "GameScene.h"
+
 #define TRACK_LONG 23
 #define CHOOSE_FOOD_NUM 6
 Scene* GameScene::createScene()
@@ -15,8 +16,8 @@ GameScene::GameScene()
 	chooose_food_num = 0;
 	vec_track.clear();
 	vec_noodle.clear();
-	vec_customer_tip.clear();
-	vec_customer_time.clear();
+	map_customer.clear();
+	vec_customer.clear();
 	memset(array_food, 0, sizeof(array_food));
 	rootNode = nullptr;
 }
@@ -32,7 +33,6 @@ bool GameScene::init()
     {
         return false;
     }
-	Json::getInstance()->setJson("123");
     rootNode = CSLoader::createNode("GameScene.csb");
     addChild(rootNode);
 
@@ -70,6 +70,12 @@ bool GameScene::init()
 		Button* button = dynamic_cast<Button*>(rootNode->getChildByName("Cake")->getChildByTag(i + 1));
 		button->setTag(i);
 		button->addClickEventListener(CC_CALLBACK_1(GameScene::chooseCake, this));
+	}
+	//角色心情提示
+	for (int i = 0; i < 5; i++)
+	{
+		Node* customer_node = dynamic_cast<Node*>(rootNode->getChildByName("Customer")->getChildByTag(i + 1));
+		vec_customer.push_back(customer_node);
 	}
 	this->scheduleUpdate();
     return true;
@@ -118,13 +124,15 @@ void GameScene::update(float delta)
 		}
 	}
 	//顾客
-	for (int i = 1; i < 6; i++)
+	for (int i = 0; i < 5; i++)
 	{
-		if (vec_customer_tip[i])
+		if (map_customer[i])
 		{
-			vec_customer_time[i] -= delta;
-			if (vec_customer_time[i] / 10)
+			if (map_customer[i]->spendTime(delta))
 			{
+				//删除顾客
+				this->removeChild(map_customer[i]);
+				map_customer[i] = nullptr;
 			}
 		}
 	}
@@ -196,7 +204,7 @@ void GameScene::makeFood(Ref* pSender)
 	clearFood();
 	//上面
 	Sprite* spr_noodle = Sprite::createWithSpriteFrameName(is_true ? "game1_icon_yangchunmian.png" : "game1_icon_orderbg.png");
-	spr_noodle->setPosition(Vec2(1400, 330));
+	spr_noodle->setPosition(Vec2(1400, 350));
 	this->addChild(spr_noodle);
 	vec_noodle.push_back(spr_noodle);
 }
@@ -249,11 +257,15 @@ bool GameScene::isTureFood(int base_food[12])
 //来顾客
 void GameScene::comeCustomer()
 {
-	Node* tip_node = dynamic_cast<Node*>(rootNode->getChildByName("Tip"));
-	Node* tip_node_1 = tip_node->getChildByTag(1);
-	tip_node_1->setVisible(true);
-	vec_customer_tip[1] = tip_node_1;
-	vec_customer_time[1] = 60;
+	if (map_customer[0])
+	{
+		return;
+	}
+	Customer* customer = Customer::createCustomer(vec_customer[0]);
+	this->addChild(customer);
+	customer->setWaitTime(10.f);
+
+	map_customer[0] = customer;
 }
 //清理案板
 void GameScene::clearFood()//清除案板

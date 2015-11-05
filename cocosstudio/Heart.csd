@@ -6,7 +6,7 @@
       <ObjectData Name="Node" Tag="4" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="game1_icon_order_heart_black_1" ActionTag="-1994058676" Tag="-1" IconVisible="False" LeftMargin="-9.5000" RightMargin="-9.5000" TopMargin="-9.0000" BottomMargin="-9.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="bg" ActionTag="-1994058676" Tag="-1" IconVisible="False" LeftMargin="-9.5000" RightMargin="-9.5000" TopMargin="-9.0000" BottomMargin="-9.0000" ctype="SpriteObjectData">
             <Size X="19.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />
@@ -28,7 +28,7 @@
             <FileData Type="PlistSubImage" Path="game1_icon_order_heart_red.png" Plist="GameScene.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="heart_half" ActionTag="273933839" Tag="2" IconVisible="False" LeftMargin="-9.5000" RightMargin="-9.5000" TopMargin="-9.0000" BottomMargin="-9.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="heart_half" ActionTag="273933839" VisibleForFrame="False" Tag="2" IconVisible="False" LeftMargin="-9.5000" RightMargin="-9.5000" TopMargin="-9.0000" BottomMargin="-9.0000" ctype="SpriteObjectData">
             <Size X="19.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />
@@ -39,7 +39,7 @@
             <FileData Type="PlistSubImage" Path="game1_icon_order_heart_half.png" Plist="GameScene.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="game1_icon_order_heart_edge_4" ActionTag="1147659131" Tag="-1" IconVisible="False" LeftMargin="-9.5000" RightMargin="-9.5000" TopMargin="-9.0000" BottomMargin="-9.0000" ctype="SpriteObjectData">
+          <AbstractNodeData Name="kuang" ActionTag="1147659131" Tag="-1" IconVisible="False" LeftMargin="-9.5000" RightMargin="-9.5000" TopMargin="-9.0000" BottomMargin="-9.0000" ctype="SpriteObjectData">
             <Size X="19.0000" Y="18.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position />

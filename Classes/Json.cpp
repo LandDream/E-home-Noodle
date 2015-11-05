@@ -17,8 +17,9 @@ Json * Json::getInstance()
 
 const char * Json::getJson(const char * name, int num, const char * str)
 {
-	string JsonName = "res/CUSTOMER.json";
-	JsonName.replace(JsonName.find("CUSTOMER"), sizeof("CUSTOMER") - 1, name);
+	string JsonName = String::createWithFormat("res/%s.json", name)->getCString();
+	//string JsonName = "res/CUSTOMER.json";
+	//JsonName.replace(JsonName.find("CUSTOMER"), sizeof("CUSTOMER") - 1, name);
 
 	string path = CCFileUtils::sharedFileUtils()->fullPathForFilename(JsonName);
 	string data = FileUtils::getInstance()->getStringFromFile(path);
@@ -54,3 +55,4 @@ const char * Json::getJson(const char * name, int num, const char * str)
 	}
 	return _str;
 }
+
