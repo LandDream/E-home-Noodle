@@ -39,6 +39,7 @@ private:
 public:
 	static Json * getInstance();
 	const char * getJson(const char * name,int num, const char * str);
+	int StorageStar(int Checkpoint, int StarNum);
 };
 
 #endif
