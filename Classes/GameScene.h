@@ -60,5 +60,6 @@ private:
 public:
 	void GetCoin(Ref * pSender);
 	void PlayAction(Sprite * sp);
-	
+	void SetSmileNum(int count);
+	void SetAngryNum(int count);
 };
