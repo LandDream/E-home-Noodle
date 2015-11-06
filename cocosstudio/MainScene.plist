@@ -69,6 +69,19 @@
                 <key>sourceSize</key>
                 <string>{127,66}</string>
             </dict>
+            <key>denglu_icon_setup.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{754,501},{78,76}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,5},{78,76}}</string>
+                <key>sourceSize</key>
+                <string>{78,86}</string>
+            </dict>
             <key>denglu_icon_shangdian.png</key>
             <dict>
                 <key>frame</key>
@@ -94,19 +107,6 @@
                 <string>{{0,2},{215,103}}</string>
                 <key>sourceSize</key>
                 <string>{215,105}</string>
-            </dict>
-            <key>denglu_icon_设置.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{754,501},{78,76}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,5},{78,76}}</string>
-                <key>sourceSize</key>
-                <string>{78,86}</string>
             </dict>
             <key>game_bangzhujiemian_bg.png</key>
             <dict>
@@ -160,7 +160,7 @@
                 <key>sourceSize</key>
                 <string>{473,93}</string>
             </dict>
-            <key>game_loading_bg.png</key>
+            <key>game_main_bg.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{1334,750}}</string>
@@ -173,7 +173,7 @@
                 <key>sourceSize</key>
                 <string>{1334,750}</string>
             </dict>
-            <key>game_loading_noodle.png</key>
+            <key>game_main_noodle.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,1338},{708,548}}</string>
@@ -235,7 +235,7 @@
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:88325fe2d5a6e788e8b72ed611bb6722$</string>
+            <string>$TexturePacker:SmartUpdate:fcb0bb1e6220955bf8be01dcbcf66cf9$</string>
             <key>textureFileName</key>
             <string>MainScene.png</string>
         </dict>

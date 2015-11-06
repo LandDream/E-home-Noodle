@@ -31,10 +31,10 @@
           <AbstractNodeData Name="tip" ActionTag="-77115791" Tag="2" IconVisible="True" TopMargin="-230.0000" BottomMargin="230.0000" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
-              <AbstractNodeData Name="bg" ActionTag="219665449" Tag="-1" IconVisible="False" LeftMargin="-67.5000" RightMargin="-65.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="bg" ActionTag="219665449" Tag="-1" IconVisible="False" LeftMargin="-66.5000" RightMargin="-66.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
                 <Size X="133.0000" Y="122.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="-1.0000" Y="5.0000" />
+                <Position Y="5.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
@@ -52,10 +52,10 @@
                 <PreSize X="0.1563" Y="0.2344" />
                 <FileData Type="PlistSubImage" Path="game1_icon_order_edge.png" Plist="GameScene.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="noodle" ActionTag="554617939" IconVisible="False" LeftMargin="-62.0000" RightMargin="-56.0000" TopMargin="-60.5000" BottomMargin="-36.5000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="noodle" ActionTag="554617939" IconVisible="False" LeftMargin="-72.5000" RightMargin="-72.5000" TopMargin="-64.5000" BottomMargin="-40.5000" ctype="SpriteObjectData">
                 <Size X="145.0000" Y="105.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="-3.0000" Y="12.0000" />
+                <Position Y="12.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />

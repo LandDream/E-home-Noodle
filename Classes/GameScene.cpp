@@ -165,19 +165,13 @@ void GameScene::update(float delta)
 		else
 		{
 			(*itr)->setPositionX((*itr)->getPositionX() - MOVE_SPEED);
-			if ((*itr)->getNoodleState())//面条是制作成功的
+			for (int i = 0; i < MAX_CUSTOMER; i++)
 			{
-				for (int i = 0; i < MAX_CUSTOMER; i++)
+				float pos = (*itr)->getPositionX() - vec_customer[i]->getPositionX() - 667;
+				bool is_true_pos = pos < 64 && pos > -64;
+				if (is_true_pos && map_customer[i] && map_customer[i]->eatNoodle((*itr)->noodle_id))
 				{
-					if (map_customer[i] && map_customer[i]->isAbelEat())
-					{
-						float pos = (*itr)->getPositionX() - vec_customer[i]->getPositionX() - 667;
-						if (pos < 64 && pos > -64)
-						{
-							is_noodle_none = true;
-							map_customer[i]->setStateEating();//顾客吃了，换状态
-						}
-					}
+					is_noodle_none = true;
 				}
 			}
 		}

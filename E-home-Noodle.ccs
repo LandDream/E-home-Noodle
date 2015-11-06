@@ -85,7 +85,6 @@
         <Project Name="Heart.csd" Type="Node" />
         <Project Name="Bar.csd" Type="Node" />
         <Project Name="Customer.csd" Type="Node" />
-<<<<<<< HEAD
         <PlistImageFolder Image="Customer.png" PListFile="Customer.plist" Name=".Customer_PList.Dir">
           <PlistImageFile Name="game_lady_angry_1.png" Key="game_lady_angry_1.png" />
           <PlistImageFile Name="game_lady_angry_2.png" Key="game_lady_angry_2.png" />
@@ -105,24 +104,17 @@
           <PlistImageFile Name="denglu_icon_mianba.png" Key="denglu_icon_mianba.png" />
           <PlistImageFile Name="denglu_icon_shangdian.png" Key="denglu_icon_shangdian.png" />
           <PlistImageFile Name="denglu_icon_xuanguan.png" Key="denglu_icon_xuanguan.png" />
-          <PlistImageFile Name="denglu_icon_设置.png" Key="denglu_icon_设置.png" />
           <PlistImageFile Name="game_bangzhujiemian_bg.png" Key="game_bangzhujiemian_bg.png" />
           <PlistImageFile Name="game_bangzhujiemian_dingkuang.png" Key="game_bangzhujiemian_dingkuang.png" />
           <PlistImageFile Name="game_bangzhujiemian_dingkuanggaoguang.png" Key="game_bangzhujiemian_dingkuanggaoguang.png" />
           <PlistImageFile Name="game_bangzhujiemian_shicaibg.png" Key="game_bangzhujiemian_shicaibg.png" />
-          <PlistImageFile Name="game_loading_bg.png" Key="game_loading_bg.png" />
-          <PlistImageFile Name="game_loading_noodle.png" Key="game_loading_noodle.png" />
           <PlistImageFile Name="game_tanchukuang.png" Key="game_tanchukuang.png" />
           <PlistImageFile Name="game_ui_guanbi.png" Key="game_ui_guanbi.png" />
           <PlistImageFile Name="nvhai_e.png" Key="nvhai_e.png" />
+          <PlistImageFile Name="denglu_icon_setup.png" Key="denglu_icon_setup.png" />
+          <PlistImageFile Name="game_main_bg.png" Key="game_main_bg.png" />
+          <PlistImageFile Name="game_main_noodle.png" Key="game_main_noodle.png" />
         </PlistImageFolder>
-=======
-        <Image Name="GameScene.png" />
-        <Image Name="HelloWorld.png" />
-        <Project Name="LogoScene.csd" Type="Scene" />
-        <Project Name="mainScence.csd" Type="Scene" />
-        <Project Name="HelpLayer.csd" Type="Layer" />
->>>>>>> work
       </RootFolder>
     </Group>
   </SolutionFolder>

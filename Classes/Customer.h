@@ -19,7 +19,7 @@ public:
 	void setStateEating();
 	int patientLevel();
 	void reductionAll();
-	bool isAbelEat();
+	bool eatNoodle(int noodleID);
 	CC_SYNTHESIZE(e_Customer_State, e_customer_state, CustomerState);
 
 private:

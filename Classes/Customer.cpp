@@ -141,9 +141,15 @@ void Customer::reductionAll()//一切还原
 	}
 }
 
-bool Customer::isAbelEat()
+bool Customer::eatNoodle(int noodleID)
 {
-	return e_customer_state == e_Customer_State_Wait;
+	bool is_eat = e_customer_state == e_Customer_State_Wait && noodleID == noodle_id;
+	if (is_eat)
+	{
+		setStateEating();
+	}
+
+	return is_eat;
 }
 
 void Customer::setStateEating()

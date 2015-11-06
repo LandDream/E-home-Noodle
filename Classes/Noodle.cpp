@@ -19,6 +19,7 @@ Noodle* Noodle::createNoodle(int nID)
 
 void Noodle::setNoodleTpye(int nID)
 {
+	noodle_id = nID;
 	String* str_noodle;
 	if (nID == 0)
 	{
@@ -27,7 +28,6 @@ void Noodle::setNoodleTpye(int nID)
 	}
 	else
 	{
-		noodle_id = nID;
 		str_noodle = String::createWithFormat("game1_icon_noodles_%d.png", nID);
 	}
 	Sprite* spr_noodle = Sprite::createWithSpriteFrameName(str_noodle->getCString());
