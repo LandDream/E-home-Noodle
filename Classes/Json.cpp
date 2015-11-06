@@ -305,7 +305,7 @@ int Json::getNoodlesID(int(&array_food)[12])
 {
 	assert(vec_struct_noodles.size() >= 0, "NOODLES.json READ FAILED");
 
-	int noodle_id = 0;//为0，,则制作失败
+	int noodle_id = 0;//�?�?则制作失�?
 	for (int i = 0; i < vec_struct_noodles.size(); i++)
 	{
 		bool is_success = true;

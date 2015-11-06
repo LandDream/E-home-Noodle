@@ -48,6 +48,9 @@
     <ClCompile Include="..\Classes\PhoneLayer.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\BackLayer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -90,6 +93,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Singleton.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BackLayer.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
