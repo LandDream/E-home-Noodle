@@ -160,7 +160,7 @@
                 <key>sourceSize</key>
                 <string>{473,93}</string>
             </dict>
-            <key>game_loading_bg.png</key>
+            <key>game_main_bg.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{1334,750}}</string>
@@ -173,7 +173,7 @@
                 <key>sourceSize</key>
                 <string>{1334,750}</string>
             </dict>
-            <key>game_loading_noodle.png</key>
+            <key>game_main_noodle.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,1338},{708,548}}</string>
@@ -235,7 +235,7 @@
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:88325fe2d5a6e788e8b72ed611bb6722$</string>
+            <string>$TexturePacker:SmartUpdate:94ebf6dbbf259d741746a000b2bf2b76$</string>
             <key>textureFileName</key>
             <string>MainScene.png</string>
         </dict>
