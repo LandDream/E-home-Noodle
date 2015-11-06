@@ -11,6 +11,7 @@ public:
 	CREATE_FUNC(Noodle);
 	static Noodle* createNoodle(int nID);
 	void setNoodleTpye(int nID);
+	int noodle_id;
 	CC_SYNTHESIZE(bool, b_noodle_state, NoodleState);
 };
 

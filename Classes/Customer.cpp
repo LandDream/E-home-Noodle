@@ -2,9 +2,11 @@
 
 Customer::Customer()
 {
+	customer_id = 0;
+	noodle_id = 0;
 	fAllTime = 0.f;
 	fWaitTime = 0.f;
-	fEatTime = 3.0f;
+	fEatTime = 0.0f;
 	customer_man = nullptr;
 	customer_tip = nullptr;
 	self_customer = nullptr;
@@ -18,10 +20,10 @@ Customer::~Customer()
 	self_customer->release();
 }
 
-Customer* Customer::createCustomer(Node* customer_node)
+Customer* Customer::createCustomer(Node* customer_node, struct_MAN* struct_man)
 {
 	Customer* customer = Customer::create();
-	customer->setCustomer(customer_node);
+	customer->setCustomer(customer_node, struct_man);
 	return customer;
 }
 
@@ -29,6 +31,20 @@ void Customer::setWaitTime(float fTime)
 {
 	fAllTime = fTime;
 	fWaitTime = fTime;
+}
+
+bool Customer::spendTime(float fTime)
+{
+	bool is_end = false;
+	if (e_customer_state == e_Customer_State_Wait)
+	{
+		is_end = spendWaitTime(fTime);
+	}
+	else if (e_customer_state == e_Customer_State_Eating)
+	{
+		is_end = spendEatTime(fTime);
+	}
+	return is_end;
 }
 
 bool Customer::spendWaitTime(float fTime)
@@ -39,13 +55,7 @@ bool Customer::spendWaitTime(float fTime)
 	int nLevel = patientLevel();
 	if (nLevel == -1)
 	{
-		customer_tip->setVisible(false);
-		customer_man->setVisible(false);
-		for (int i = 0; i < 5; i++)//ÄÍÐÄÂú
-		{
-			customer_tip->getChildByTag(i + 1)->getChildByName("heart_red")->setVisible(true);
-			customer_tip->getChildByTag(i + 1)->getChildByName("heart_half")->setVisible(false);
-		}
+		reductionAll();
 
 		is_end = true;
 	}
@@ -64,36 +74,46 @@ bool Customer::spendWaitTime(float fTime)
 bool Customer::spendEatTime(float fTime)
 {
 	fEatTime -= fTime;
+
 	bool is_end = false;
-	if (fEatTime<0.f)
+	if (fEatTime < 0.f)
 	{
-		customer_tip->setVisible(false);
-		customer_man->setVisible(false);
-		for (int i = 0; i < 5; i++)//ÄÍÐÄÂú
-		{
-			customer_tip->getChildByTag(i + 1)->getChildByName("heart_red")->setVisible(true);
-			customer_tip->getChildByTag(i + 1)->getChildByName("heart_half")->setVisible(false);
-		}
+		reductionAll();
 
 		is_end = true;
 	}
 	return is_end;
 }
 
-void Customer::setCustomer(Node* customer_node)
+void Customer::setCustomer(Node* customer_node, struct_MAN* struct_man)
 {
 	self_customer = customer_node;
 	self_customer->retain();
 
 	customer_man = dynamic_cast<Sprite*>(self_customer->getChildByName("man"));
 	customer_man->retain();
-	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("white_eat_food1.png");
-	customer_man->setDisplayFrame(frame_eat);
 	customer_man->setVisible(true);
 
 	customer_tip = self_customer->getChildByName("tip");
 	customer_tip->retain();
 	customer_tip->setVisible(true);
+
+	//è®¾ç½®é¡¾å®¢åŸºæœ¬ä¿¡æ¯
+	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("white_eat_food1.png");
+	customer_man->setDisplayFrame(frame_eat);
+
+	setWaitTime(struct_man->WAIT_TIME);
+
+	customer_id = struct_man->MAN_ID;
+
+	noodle_id = struct_man->NOODLE_ID;
+
+	String* str_noodle = String::createWithFormat("game1_icon_noodles_%d.png", noodle_id);
+	SpriteFrame* frame_noodle = SpriteFrameCache::getInstance()->getSpriteFrameByName(str_noodle->getCString());
+	Sprite* sprite_noodle = dynamic_cast<Sprite*>(customer_tip->getChildByName("noodle"));
+	sprite_noodle->setDisplayFrame(frame_noodle);
+
+	fEatTime = struct_man->EAT_TIME;
 }
 
 int Customer::patientLevel()
@@ -108,6 +128,22 @@ int Customer::patientLevel()
 		}
 	}
 	return nLevel;
+}
+
+void Customer::reductionAll()//ä¸€åˆ‡è¿˜åŽŸ
+{
+	customer_tip->setVisible(false);
+	customer_man->setVisible(false);
+	for (int i = 0; i < MAX_CUSTOMER; i++)//è€å¿ƒæ»¡
+	{
+		customer_tip->getChildByTag(i + 1)->getChildByName("heart_red")->setVisible(true);
+		customer_tip->getChildByTag(i + 1)->getChildByName("heart_half")->setVisible(false);
+	}
+}
+
+bool Customer::isAbelEat()
+{
+	return e_customer_state == e_Customer_State_Wait;
 }
 
 void Customer::setStateEating()
