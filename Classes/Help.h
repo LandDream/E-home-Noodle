@@ -5,13 +5,13 @@
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;
-class Help : public cocos2d::Layer
+class HelpLayer : public cocos2d::Layer
 {
 public:
 	virtual bool init();
-	CREATE_FUNC(Help);
-	Help();
-	~Help();
+	CREATE_FUNC(HelpLayer);
+	HelpLayer();
+	~HelpLayer();
 
 	void exit(Ref * pSender);
 
