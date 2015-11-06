@@ -1,16 +1,16 @@
 #include "Help.h"
 
-Help::Help()
+HelpLayer::HelpLayer()
 {
 
 }
 
-Help::~Help()
+HelpLayer::~HelpLayer()
 {
 
 }
 
-bool Help::init()
+bool HelpLayer::init()
 {
 	if (!Layer::init())
 	{
@@ -20,12 +20,12 @@ bool Help::init()
 	addChild(sp);
 	
 	Button* button = dynamic_cast<Button*>(sp->getChildByName("btn_exit"));
-	button->addClickEventListener(CC_CALLBACK_1(Help::exit, this));
+	button->addClickEventListener(CC_CALLBACK_1(HelpLayer::exit, this));
 
 	return true;
 }
 
-void Help::exit(Ref * pSender)
+void HelpLayer::exit(Ref * pSender)
 {
 	this->removeFromParent();
 }
