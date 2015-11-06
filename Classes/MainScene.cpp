@@ -1,6 +1,7 @@
 #include "MainScene.h"
 #include "GameScene.h"
 #include "Help.h"
+#include "GuanQia.h"
 
 
 MainScene::MainScene()
@@ -68,7 +69,8 @@ void MainScene::StartGameScene(Ref * pSender)
 
 void MainScene::OpenChooseLayer(Ref * pSender)
 {
-
+	auto * gq = GuanQiaLayer::create();
+	addChild(gq);
 }
 
 void MainScene::OpenHelpLayer(Ref * pSender)

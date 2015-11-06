@@ -22,12 +22,12 @@ bool GuanQiaLayer::init()
 
 	for (int i = 1; i <= 10 ; i++)
 	{
-		Node * wd_up = CSLoader::createNode("ui/guanqia_btn.csb");
-		wd_up->setPosition(Vec2(50, 0));
+		Node * wd_up = CSLoader::createNode("guanqia_btn.csb");
+		wd_up->setPosition(Vec2(50, -200));
 		Button* btn_up = dynamic_cast<Button*>(wd_up->getChildByName("btn_1"));
 		btn_up->setSwallowTouches(false);
-		Node * wd_down = CSLoader::createNode("ui/guanqia_btn.csb");
-		wd_down->setPosition(Vec2(50, -200));
+		Node * wd_down = CSLoader::createNode("guanqia_btn.csb");
+		wd_down->setPosition(Vec2(50, -400));
 		Button* btn_down = dynamic_cast<Button*>(wd_down->getChildByName("btn_1"));
 		btn_down->setSwallowTouches(false);
 		Widget* layout = Widget::create();
