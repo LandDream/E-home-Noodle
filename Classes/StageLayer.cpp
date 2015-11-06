@@ -1,16 +1,16 @@
-#include "GuanQia.h"
+#include "StageLayer.h"
 
-GuanQiaLayer::GuanQiaLayer()
+StageLayer::StageLayer()
 {
 
 }
 
-GuanQiaLayer::~GuanQiaLayer()
+StageLayer::~StageLayer()
 {
 
 }
 
-bool GuanQiaLayer::init()
+bool StageLayer::init()
 {
 	if (!Layer::init())
 	{
@@ -37,12 +37,12 @@ bool GuanQiaLayer::init()
 	}
 
 	Button* button = dynamic_cast<Button*>(sp->getChildByName("btn_exit"));
-	button->addClickEventListener(CC_CALLBACK_1(GuanQiaLayer::exit, this));
+	button->addClickEventListener(CC_CALLBACK_1(StageLayer::exit, this));
 
 	return true;
 }
 
-void GuanQiaLayer::exit(Ref * pSender)
+void StageLayer::exit(Ref * pSender)
 {
 	this->removeFromParent();
 }

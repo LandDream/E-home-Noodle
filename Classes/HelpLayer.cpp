@@ -1,4 +1,4 @@
-#include "Help.h"
+#include "HelpLayer.h"
 
 HelpLayer::HelpLayer()
 {

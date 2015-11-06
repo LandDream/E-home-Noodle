@@ -5,13 +5,13 @@
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;
-class GuanQiaLayer : public cocos2d::Layer
+class StageLayer : public cocos2d::Layer
 {
 public:
 	virtual bool init();
-	CREATE_FUNC(GuanQiaLayer);
-	GuanQiaLayer();
-	~GuanQiaLayer();
+	CREATE_FUNC(StageLayer);
+	StageLayer();
+	~StageLayer();
 
 	void exit(Ref * pSender);
 

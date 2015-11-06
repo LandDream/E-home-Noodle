@@ -127,7 +127,7 @@
             <PreSize X="0.0979" Y="0.1391" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_cookbook.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_cookbook.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -230,7 +230,7 @@
             <PreSize X="0.0938" Y="0.1672" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_phone.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_phone.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -245,7 +245,7 @@
             <PreSize X="0.0750" Y="0.1344" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_ashcan.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_ashcan.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -253,24 +253,24 @@
           <AbstractNodeData Name="make_btn" ActionTag="142267983" Tag="435" IconVisible="False" LeftMargin="138.5296" RightMargin="945.4704" TopMargin="615.4280" BottomMargin="52.5720" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="14" RightEage="14" TopEage="27" BottomEage="27" Scale9OriginX="14" Scale9OriginY="27" Scale9Width="15" Scale9Height="28" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="250.0000" Y="82.0000" />
             <Children>
-              <AbstractNodeData Name="game1_icon_cook_dishes_18" ActionTag="-1749937720" Tag="117" IconVisible="False" LeftMargin="159.2213" RightMargin="20.7787" TopMargin="6.2849" BottomMargin="8.7151" ctype="SpriteObjectData">
+              <AbstractNodeData Name="game1_icon_cook_dishes_18" ActionTag="-1749937720" Tag="117" IconVisible="False" LeftMargin="159.2213" RightMargin="20.7787" TopMargin="6.5000" BottomMargin="8.5000" ctype="SpriteObjectData">
                 <Size X="70.0000" Y="67.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="194.2213" Y="42.2151" />
+                <Position X="194.2213" Y="42.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7769" Y="0.5148" />
+                <PrePosition X="0.7769" Y="0.5122" />
                 <PreSize X="0.0000" Y="0.0000" />
                 <FileData Type="PlistSubImage" Path="game1_icon_cook_dishes.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="game1_icon_cook_word_19" ActionTag="2034903087" Tag="118" IconVisible="False" LeftMargin="31.6452" RightMargin="120.3548" TopMargin="17.8617" BottomMargin="15.1383" ctype="SpriteObjectData">
+              <AbstractNodeData Name="game1_icon_cook_word_19" ActionTag="2034903087" Tag="118" IconVisible="False" LeftMargin="31.6452" RightMargin="120.3548" TopMargin="15.5000" BottomMargin="17.5000" ctype="SpriteObjectData">
                 <Size X="98.0000" Y="49.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="80.6452" Y="39.6383" />
+                <Position X="80.6452" Y="42.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.3226" Y="0.4834" />
+                <PrePosition X="0.3226" Y="0.5122" />
                 <PreSize X="0.0000" Y="0.0000" />
                 <FileData Type="PlistSubImage" Path="game1_icon_cook_word.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
@@ -284,7 +284,7 @@
             <PreSize X="0.1874" Y="0.1093" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_cook_dg.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_cook_dg.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />

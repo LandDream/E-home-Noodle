@@ -27,7 +27,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_beff01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_beff01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -42,7 +42,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_broccoli01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_broccoli01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -57,7 +57,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_chicken01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_chicken01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -72,7 +72,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_chili01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_chili01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -87,7 +87,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_dumplings01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_dumplings01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -102,7 +102,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_egg01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_egg01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -117,7 +117,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_fish01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_fish01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -132,7 +132,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_mushrooms01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_mushrooms01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -147,7 +147,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_noodles01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_noodles01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -162,7 +162,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_pork01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_pork01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -177,7 +177,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_shallot01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_shallot01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -192,7 +192,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="PlistSubImage" Path="game1_icon_food_shrimp01.png" Plist="GameScene.plist" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="PlistSubImage" Path="game1_icon_food_shrimp01.png" Plist="GameScene.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />

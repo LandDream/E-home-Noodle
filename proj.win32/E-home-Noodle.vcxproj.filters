@@ -27,9 +27,6 @@
     <ClCompile Include="..\Classes\Json.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Help.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Noodle.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -51,6 +48,12 @@
     <ClCompile Include="..\Classes\BackLayer.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\HelpLayer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StageLayer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -69,9 +72,6 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Json.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Help.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Noodle.h">
@@ -96,6 +96,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\BackLayer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelpLayer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StageLayer.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
