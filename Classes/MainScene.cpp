@@ -1,5 +1,6 @@
 #include "MainScene.h"
 #include "GameScene.h"
+#include "Help.h"
 
 
 MainScene::MainScene()
@@ -72,7 +73,8 @@ void MainScene::OpenChooseLayer(Ref * pSender)
 
 void MainScene::OpenHelpLayer(Ref * pSender)
 {
-
+	auto * hp = HelpLayer::create();
+	addChild(hp);
 }
 
 void MainScene::OpenSetingLayer(Ref * pSender)
