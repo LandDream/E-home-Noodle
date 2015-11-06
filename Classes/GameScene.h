@@ -10,6 +10,7 @@
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;
+using namespace std;
 class GameScene : public cocos2d::Layer
 {
 public:
@@ -44,12 +45,17 @@ private:
 private:
 	Text * p_level_lab;
 	Text * p_time_lab;
-	Text * p_money_lab;
+	Text * p_Curmoney_lab;
+	Text * p_needMoney_lab;
 	Text * p_smile_lab;
 	Text * p_angry_lab;
 
 	float m_Time;
-	float m_prcent;
+	float m_base_time;
 	LoadingBar * Timer_Bar;
+	int curCoin;
+public:
+	void GetCoin(Ref * pSender);
+	void PlayAction(Sprite * sp);
 	
 };

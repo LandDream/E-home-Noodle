@@ -88,6 +88,11 @@
         <Project Name="Heart.csd" Type="Node" />
         <Project Name="Bar.csd" Type="Node" />
         <Project Name="Customer.csd" Type="Node" />
+        <Image Name="GameScene.png" />
+        <Image Name="HelloWorld.png" />
+        <Project Name="LogoScene.csd" Type="Scene" />
+        <Project Name="mainScence.csd" Type="Scene" />
+        <Project Name="HelpLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
