@@ -17,6 +17,7 @@ GameScene::GameScene()
 	vec_noodle.clear();
 	map_customer.clear();
 	vec_customer.clear();
+	map_create_customer_time.clear();
 	memset(array_food, 0, sizeof(array_food));
 	rootNode = nullptr;
 	p_level_lab = nullptr;
@@ -78,13 +79,17 @@ bool GameScene::init()
 	{
 		Sprite* spr_track = Sprite::createWithSpriteFrameName("game1_icon_track.png");
 		spr_track->setPosition(Vec2(i * 62, 328));
-		this->addChild(spr_track);
+		this->addChild(spr_track, 0);
 		vec_track.push_back(spr_track);
 	}
+	
+	Node* cakeNode = CSLoader::createNode("Cake.csb");
+	cakeNode->setPosition(Vec2(500.f, 240.f));
+	addChild(cakeNode, 100);
 	//咖啡---被传送带遮住，未解决
 	for (int i = 0; i < 3; i++)
 	{
-		Button* button = dynamic_cast<Button*>(rootNode->getChildByName("Cake")->getChildByTag(i + 1));
+		Button* button = dynamic_cast<Button*>(cakeNode->getChildByTag(i + 1));
 		button->setTag(i);
 		button->addClickEventListener(CC_CALLBACK_1(GameScene::chooseCake, this));
 	}
@@ -116,6 +121,9 @@ bool GameScene::init()
 	p_smile_lab->setString("4");
 
 	p_angry_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("angry")->getChildByTag(104));
+
+	createCustomerTime();//分配创建顾客时间
+
 	this->scheduleUpdate();
 
 	m_Time = (float)atoi(Json::getInstance()->getJson("STAGE", Json::getInstance()->getCurStage(), "STAGE_TIME"));
@@ -128,12 +136,12 @@ void GameScene::chooseFood(Ref* pSender)
 {
 	Button* button = dynamic_cast<Button*>(pSender);
 	int foodTag = button->getTag();
-	if (array_food[foodTag] == 1 || chooose_food_num >= MAX_CHOOSE_FOOD)
+	if (chooose_food_num >= MAX_CHOOSE_FOOD)
 	{
 		return;
 	}
 	chooose_food_num++;
-	array_food[foodTag] = 1;
+	array_food[foodTag]++;
 
 	SpriteFrame* food_frame =  SpriteFrameCache::getInstance()->getSpriteFrameByName(getFoodNameByTag(foodTag));
 	Sprite* spr_food = dynamic_cast<Sprite*>(rootNode->getChildByName("Board")->getChildByTag(chooose_food_num));
@@ -212,10 +220,14 @@ void GameScene::update(float delta)
 		}
 		else
 		{
-			struct_MAN* struct_man = Json::getInstance()->getNewCustomer();
-			if (struct_man)
+			map_create_customer_time[i] -= delta;
+			if (map_create_customer_time[i] < 0.f)
 			{
-				createNewCustomer(i, struct_man);
+				struct_MAN* struct_man = Json::getInstance()->getNewCustomer();
+				if (struct_man)
+				{
+					createNewCustomer(i, struct_man);
+				}
 			}
 		}
 	}
@@ -319,8 +331,32 @@ void GameScene::chooseCake(Ref* pSender)
 	Button* button = dynamic_cast<Button*>(pSender);
 	if (button->isVisible())
 	{
-		Vec2 pos_cake = Vec2(200, 200);
-		Sequence* seq = Sequence::create(MoveTo::create(0.3f, pos_cake), FadeOut::create(0.1f), NULL);
+
+		int low_level = 10;
+		int nNum = -1;
+		for (int i = 0; i < MAX_CUSTOMER; i++)
+		{
+			if (map_customer[i] && map_customer[i]->getCustomerState() > e_Customer_State_Eat)
+			{
+				int nLevel = map_customer[i]->patientLevel();
+				if (low_level > nLevel)
+				{
+					low_level = nLevel;
+					nNum = i;
+				}
+			}
+		}
+		if (nNum == -1)
+		{
+			return;
+		}
+		Vec2 pos_cake = vec_customer[nNum]->getPosition() + Vec2(167, 150);
+		Sequence* seq = Sequence::create(
+			MoveTo::create(0.3f, pos_cake),
+			CallFunc::create([&]() {
+				map_customer[nNum]->addDelayTime();
+			}),
+			FadeOut::create(0.1f), NULL);
 		button->runAction(seq);
 	}
 }
@@ -334,6 +370,7 @@ void GameScene::createNewCustomer(int nNum, struct_MAN* struct_man)
 	Customer* customer = Customer::createCustomer(vec_customer[nNum], struct_man);
 	this->addChild(customer);
 
+	map_create_customer_time[nNum] = customer->getRefleshTime();
 	map_customer[nNum] = customer;
 }
 //清理案板
@@ -382,6 +419,14 @@ void GameScene::OpenBackLayer(Ref * pSender)
 
 void GameScene::OpenSetLayer(Ref* pSender)
 {
+
+}
+void GameScene::createCustomerTime()
+{
+	for (int i = 0; i < MAX_CUSTOMER; i++)
+	{
+		map_create_customer_time[i] = (rand() % 10) * 2 + 2;
+	}
 
 }
 
