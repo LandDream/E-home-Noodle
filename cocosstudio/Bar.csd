@@ -83,7 +83,7 @@
                 <FileData Type="PlistSubImage" Path="game_ui_menu_Level.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="label" ActionTag="-1446041799" Tag="553" IconVisible="False" LeftMargin="27.1044" RightMargin="-72.1044" TopMargin="-14.9195" BottomMargin="-15.0805" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="label" ActionTag="-1446041799" Tag="100" IconVisible="False" LeftMargin="27.1044" RightMargin="-72.1044" TopMargin="-14.9195" BottomMargin="-15.0805" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="49.6044" Y="-0.0805" />
@@ -136,7 +136,17 @@
                 <FileData Type="PlistSubImage" Path="game_ui_menu_time.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="label" ActionTag="-1595726777" Tag="552" IconVisible="False" LeftMargin="24.9650" RightMargin="-69.9650" TopMargin="-13.9145" BottomMargin="-16.0855" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="TimerBar" ActionTag="-1693078471" Tag="33" IconVisible="False" LeftMargin="20.0000" RightMargin="-82.0000" TopMargin="-12.5000" BottomMargin="-12.5000" ProgressInfo="100" ctype="LoadingBarObjectData">
+                <Size X="62.0000" Y="25.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="51.0000" />
+                <Scale ScaleX="2.1184" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <ImageFileData Type="PlistSubImage" Path="game1_icon_track_edge01.png" Plist="GameScene.plist" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="label" ActionTag="-1595726777" Tag="101" IconVisible="False" LeftMargin="24.9650" RightMargin="-69.9650" TopMargin="-13.9145" BottomMargin="-16.0855" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="47.4650" Y="-1.0855" />
@@ -189,10 +199,32 @@
                 <FileData Type="PlistSubImage" Path="game_ui_menu_money.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="label" ActionTag="-511513393" Tag="556" IconVisible="False" LeftMargin="28.1044" RightMargin="-73.1044" TopMargin="-13.9196" BottomMargin="-16.0804" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="label" ActionTag="-511513393" Tag="102" IconVisible="False" LeftMargin="-12.5000" RightMargin="-32.5000" TopMargin="-15.0000" BottomMargin="-15.0000" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="50.6044" Y="-1.0804" />
+                <Position X="10.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="label_0" ActionTag="2059748070" Tag="31" IconVisible="False" LeftMargin="32.5000" RightMargin="-47.5000" TopMargin="-15.0000" BottomMargin="-15.0000" FontSize="30" LabelText="/" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="15.0000" Y="30.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="40.0000" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="label_1" ActionTag="-858638827" Tag="105" IconVisible="False" LeftMargin="52.5000" RightMargin="-97.5000" TopMargin="-15.0000" BottomMargin="-15.0000" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="45.0000" Y="30.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="75.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition />
@@ -242,7 +274,7 @@
                 <FileData Type="PlistSubImage" Path="game_ui_menu_smile.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="label" ActionTag="2035540246" Tag="555" IconVisible="False" LeftMargin="25.1042" RightMargin="-70.1042" TopMargin="-12.9195" BottomMargin="-17.0805" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="label" ActionTag="2035540246" Tag="103" IconVisible="False" LeftMargin="25.1042" RightMargin="-70.1042" TopMargin="-12.9195" BottomMargin="-17.0805" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="47.6042" Y="-2.0805" />
@@ -295,7 +327,7 @@
                 <FileData Type="PlistSubImage" Path="game_ui_menu_angry.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="label" ActionTag="-1474452342" Tag="554" IconVisible="False" LeftMargin="25.1044" RightMargin="-70.1044" TopMargin="-13.9195" BottomMargin="-16.0805" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="label" ActionTag="-1474452342" Tag="104" IconVisible="False" LeftMargin="25.1044" RightMargin="-70.1044" TopMargin="-13.9195" BottomMargin="-16.0805" FontSize="30" LabelText="120" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="45.0000" Y="30.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="47.6044" Y="-1.0805" />

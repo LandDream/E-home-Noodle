@@ -85,6 +85,7 @@
         <Project Name="Heart.csd" Type="Node" />
         <Project Name="Bar.csd" Type="Node" />
         <Project Name="Customer.csd" Type="Node" />
+<<<<<<< HEAD
         <PlistImageFolder Image="Customer.png" PListFile="Customer.plist" Name=".Customer_PList.Dir">
           <PlistImageFile Name="game_lady_angry_1.png" Key="game_lady_angry_1.png" />
           <PlistImageFile Name="game_lady_angry_2.png" Key="game_lady_angry_2.png" />
@@ -115,6 +116,13 @@
           <PlistImageFile Name="game_ui_guanbi.png" Key="game_ui_guanbi.png" />
           <PlistImageFile Name="nvhai_e.png" Key="nvhai_e.png" />
         </PlistImageFolder>
+=======
+        <Image Name="GameScene.png" />
+        <Image Name="HelloWorld.png" />
+        <Project Name="LogoScene.csd" Type="Scene" />
+        <Project Name="mainScence.csd" Type="Scene" />
+        <Project Name="HelpLayer.csd" Type="Layer" />
+>>>>>>> work
       </RootFolder>
     </Group>
   </SolutionFolder>
