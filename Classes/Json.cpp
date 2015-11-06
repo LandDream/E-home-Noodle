@@ -279,7 +279,7 @@ struct_MAN* Json::getNewCustomer()
 			break;
 		}
 	}
-	struct_man->MAN_ID = nRate;
+	struct_man->MAN_ID = nRate + 1;
 
 	nRand = rand() % 100;
 	nRate = 0;
@@ -293,9 +293,8 @@ struct_MAN* Json::getNewCustomer()
 			break;
 		}
 	}
+	assert(nRate != 0, "Json struct_man->NOODLE_ID == 0");
 	struct_man->NOODLE_ID = nRate;
-	struct_man->WAIT_TIME = 10.f;
-	struct_man->EAT_TIME = 3.f;
 
 	return struct_man;
 }
@@ -325,4 +324,13 @@ int Json::getNoodlesID(int(&array_food)[12])
 	}
 	
 	return noodle_id;
+}
+
+struct_CUSTOMER* Json::getCustomerByID(int nID)
+{
+	if (nID < 1)
+	{
+		return nullptr;
+	}
+	return vec_struct_customer[nID - 1];
 }

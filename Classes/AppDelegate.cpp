@@ -37,6 +37,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     FileUtils::getInstance()->addSearchPath("res");
 
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("res/GameScene.p;list");
+	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("res/MainScene.p;list");
+	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("res/Customer.p;list");
 	Json::getInstance()->readJson();
 
     auto scene = LoadingScene::createScene();

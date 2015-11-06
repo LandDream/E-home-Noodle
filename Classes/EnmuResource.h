@@ -24,8 +24,10 @@ enum e_Food_Basket
 enum e_Customer_State
 {
 	e_Customer_State_None,
+	e_Customer_State_Eat,
 	e_Customer_State_Wait,
-	e_Customer_State_Eating,
+	e_Customer_State_Worry,
+	e_Customer_State_Angry,
 };
 
 typedef struct struct_CUSTOMER
@@ -94,6 +96,4 @@ typedef struct struct_MAN
 {
 	int MAN_ID = 0;
 	int NOODLE_ID = 0;
-	float WAIT_TIME = 0.f;
-	float EAT_TIME = 0.f;
 };

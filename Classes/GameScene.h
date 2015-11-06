@@ -29,8 +29,8 @@ public:
 	void cookBook(Ref* pSender);
 	void PhoneFood(Ref* pSender);
 	void createNewCustomer(int nNum, struct_MAN* struct_man);
+	void createCustomerTime();
 	std::string getFoodNameByTag(int nTag);
-
 	CC_SYNTHESIZE(bool, m_recordTime, RecordTime);
 	CC_SYNTHESIZE(bool, m_begingame, begingame);
 private:
@@ -39,6 +39,7 @@ private:
 	std::vector<Noodle*> vec_noodle;
 	std::vector<Node*> vec_customer;
 	std::map<int,Customer*> map_customer;
+	std::map<int, float> map_create_customer_time;
 	int array_food[12];
 	int chooose_food_num;
 private:

@@ -44,7 +44,7 @@ public:
 	int StorageStar(int Checkpoint, int StarNum);
 	int getNoodlesID(int (&array_food)[12]);
 	CC_SYNTHESIZE(int, nCurStage, CurStage);
-	
+	struct_CUSTOMER* getCustomerByID(int nID);
 };
 
 #endif
