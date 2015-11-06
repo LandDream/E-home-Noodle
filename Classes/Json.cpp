@@ -293,7 +293,6 @@ struct_MAN* Json::getNewCustomer()
 			break;
 		}
 	}
-	assert(nRate != 0, "Json struct_man->NOODLE_ID == 0");
 	struct_man->NOODLE_ID = nRate;
 
 	return struct_man;
@@ -302,8 +301,6 @@ struct_MAN* Json::getNewCustomer()
 //根据食材得到面条
 int Json::getNoodlesID(int(&array_food)[12])
 {
-	assert(vec_struct_noodles.size() >= 0, "NOODLES.json READ FAILED");
-
 	int noodle_id = 0;//�?�?则制作失�?
 	for (int i = 0; i < vec_struct_noodles.size(); i++)
 	{

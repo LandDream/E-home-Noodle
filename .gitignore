@@ -1,4 +1,6 @@
 cocos2d/
+proj.android/obj/
+proj.android/assets/
 proj.win32/Debug.win32/
 proj.win32/enc_temp_folder/
 proj.win32/E-home-Noodle.opensdf
