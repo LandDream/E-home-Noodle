@@ -61,6 +61,7 @@ bool MainScene::init()
 
 void MainScene::StartGameScene(Ref * pSender)
 {
+	Json::getInstance()->setCurStage(2);
 	Director::getInstance()->replaceScene(GameScene::createScene());
 }
 

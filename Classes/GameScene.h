@@ -27,8 +27,7 @@ public:
 	void clearFood();
 	void cookBook(Ref* pSender);
 	void PhoneFood(Ref* pSender);
-	bool isTureFood(int base_food[12]);
-	void comeCustomer(int nID);
+	void createNewCustomer(int nNum, struct_MAN* struct_man);
 	std::string getFoodNameByTag(int nTag);
 
 	CC_SYNTHESIZE(bool, m_recordTime, RecordTime);

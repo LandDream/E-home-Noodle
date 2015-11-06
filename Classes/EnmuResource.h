@@ -1,5 +1,10 @@
 #pragma once
 
+#define TRACK_LONG 23
+#define MAX_CHOOSE_FOOD 6
+#define MAX_CUSTOMER 5
+#define MOVE_SPEED 3
+
 enum e_Food_Basket
 {
 	e_food_noodle,
@@ -59,14 +64,36 @@ typedef struct struct_NOODLES
 	int NOODLE_ID = 0;
 	const char * NOODLE_NAME = "";
 	int FOOD[12] = { 0 };
-	const char * WORK_TIME = "";
-	const char * SOLD_PRICE = "";
+	int WORK_TIME = 0;
+	int SOLD_PRICE = 0;
+};
+
+typedef struct struct_NOODLE_RATE
+{
+	int ID = 0;
+	int RATE = 0;
 };
 
 typedef struct struct_STAGE
 {
 	int STAGE_ID = 0;
 	int FIRST_NOODLE_ID = 0;
-
+	int CUSTOMER_RATE[7] = { 0 };
 	int STAGE_TIME = 0;
+	int HAPPY_GOLD = 0;
+	int GOLD_TARGET = 0;
+	int HAPPY_LIMIT_NUM = 0;
+	int ANGRY_LIMIT_NUM = 0;
+	int STAR_GOLD_2 = 0;
+	int STAR_GOLD_3 = 0;
+	std::map<int, struct_NOODLE_RATE*> map_NOODLE_RATE;
+	int SUM_RATE = 0;
+};
+
+typedef struct struct_MAN
+{
+	int MAN_ID = 0;
+	int NOODLE_ID = 0;
+	float WAIT_TIME = 0.f;
+	float EAT_TIME = 0.f;
 };
