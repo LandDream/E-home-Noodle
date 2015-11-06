@@ -30,6 +30,9 @@ public:
 	bool isTureFood(int base_food[12]);
 	void comeCustomer(int nID);
 	std::string getFoodNameByTag(int nTag);
+
+	CC_SYNTHESIZE(bool, m_recordTime, RecordTime);
+	CC_SYNTHESIZE(bool, m_begingame, begingame);
 private:
 	Node* rootNode;
 	std::vector<Sprite*> vec_track;
@@ -38,5 +41,15 @@ private:
 	std::map<int,Customer*> map_customer;
 	int array_food[12];
 	int chooose_food_num;
+private:
+	Text * p_level_lab;
+	Text * p_time_lab;
+	Text * p_money_lab;
+	Text * p_smile_lab;
+	Text * p_angry_lab;
+
+	float m_Time;
+	float m_prcent;
+	LoadingBar * Timer_Bar;
 	
 };

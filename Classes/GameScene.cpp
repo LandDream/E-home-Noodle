@@ -23,6 +23,16 @@ GameScene::GameScene()
 	vec_customer.clear();
 	memset(array_food, 0, sizeof(array_food));
 	rootNode = nullptr;
+	p_level_lab = nullptr;
+	p_time_lab = nullptr;
+	p_money_lab = nullptr;
+	p_smile_lab = nullptr;
+	p_angry_lab = nullptr;
+	m_recordTime = false;
+	m_begingame = true;
+	m_Time = 10.f;
+	Timer_Bar = nullptr;
+	m_prcent = 0.f;
 }
 
 GameScene::~GameScene()
@@ -80,6 +90,23 @@ bool GameScene::init()
 		Node* customer_node = dynamic_cast<Node*>(rootNode->getChildByName("Customer")->getChildByTag(i + 1));
 		vec_customer.push_back(customer_node);
 	}
+
+	//Bar
+	p_level_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("guanqia")->getChildByTag(100));
+	p_level_lab->setString("1");
+
+	p_time_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("time")->getChildByTag(101));
+	p_time_lab->setString("0");
+
+	Timer_Bar = dynamic_cast<LoadingBar*>(rootNode->getChildByName("Bar")->getChildByName("time")->getChildByName("TimerBar"));
+
+	p_money_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("money")->getChildByTag(102));
+	p_money_lab->setString("3");
+
+	p_smile_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("smile")->getChildByTag(103));
+	p_smile_lab->setString("4");
+
+	p_angry_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("angry")->getChildByTag(104));
 	this->scheduleUpdate();
     return true;
 }
@@ -104,6 +131,21 @@ void GameScene::chooseFood(Ref* pSender)
 
 void GameScene::update(float delta)
 {
+	//倒计时
+	if (getRecordTime())
+	{
+		m_Time -= delta;
+		String * str = String::createWithFormat("%d", (int)m_Time % 60);
+		p_time_lab->setString(str->getCString());
+		Timer_Bar->setPercent(m_Time / 10.f * 100);
+		if (!p_time_lab->getString().compare("0"))
+		{
+			CCLOG("time over");
+			setRecordTime(false);
+			Timer_Bar->setPercent(0.0f);
+		}
+	}
+
 	//传送带
 	for (auto itr : vec_track)
 	{
@@ -220,6 +262,12 @@ void GameScene::makeFood(Ref* pSender)
 	if (chooose_food_num < 1)
 	{
 		return;
+	}
+
+	if (getbegingame())
+	{
+		setRecordTime(true);
+		setbegingame(false);
 	}
 
 	int noodle_id = Json::getInstance()->getNoodlesID(array_food);

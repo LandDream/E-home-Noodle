@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
 #include "GameScene.h"
+#include "GameData.h"
+#include "LoadingScene.h"
 
 USING_NS_CC;
 
@@ -37,7 +39,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("res/GameScene.p;list");
 	Json::getInstance()->readJson();
 
-    auto scene = GameScene::createScene();
+    auto scene = LoadingScene::createScene();
     director->runWithScene(scene);
 
     return true;

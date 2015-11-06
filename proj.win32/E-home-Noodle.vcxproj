@@ -145,21 +145,32 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\BarData.cpp" />
     <ClCompile Include="..\Classes\Customer.cpp" />
+    <ClCompile Include="..\Classes\GameData.cpp" />
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\Help.cpp" />
     <ClCompile Include="..\Classes\Json.cpp" />
+    <ClCompile Include="..\Classes\LoadingScene.cpp" />
+    <ClCompile Include="..\Classes\MainScene.cpp" />
     <ClCompile Include="..\Classes\Noodle.cpp" />
+    <ClCompile Include="..\Classes\PhoneLayer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\BarData.h" />
     <ClInclude Include="..\Classes\Customer.h" />
     <ClInclude Include="..\Classes\EnmuResource.h" />
+    <ClInclude Include="..\Classes\GameData.h" />
     <ClInclude Include="..\Classes\GameScene.h" />
     <ClInclude Include="..\Classes\Help.h" />
     <ClInclude Include="..\Classes\Json.h" />
+    <ClInclude Include="..\Classes\LoadingScene.h" />
+    <ClInclude Include="..\Classes\MainScene.h" />
     <ClInclude Include="..\Classes\Noodle.h" />
+    <ClInclude Include="..\Classes\PhoneLayer.h" />
+    <ClInclude Include="..\Classes\Singleton.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
