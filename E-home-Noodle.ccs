@@ -36,7 +36,6 @@
           <PlistImageFile Name="game1_icon_track.png" Key="game1_icon_track.png" />
           <PlistImageFile Name="game1_icon_track_edge01.png" Key="game1_icon_track_edge01.png" />
           <PlistImageFile Name="game1_icon_track_edge02.png" Key="game1_icon_track_edge02.png" />
-          <PlistImageFile Name="game1_icon_yangchunmian.png" Key="game1_icon_yangchunmian.png" />
           <PlistImageFile Name="game_ui_menu_Level.png" Key="game_ui_menu_Level.png" />
           <PlistImageFile Name="game_ui_menu_angry.png" Key="game_ui_menu_angry.png" />
           <PlistImageFile Name="game_ui_menu_menu.png" Key="game_ui_menu_menu.png" />
@@ -78,9 +77,7 @@
           <PlistImageFile Name="game1_icon_noodles_1028.png" Key="game1_icon_noodles_1028.png" />
           <PlistImageFile Name="game1_icon_noodles_1029.png" Key="game1_icon_noodles_1029.png" />
           <PlistImageFile Name="game1_icon_noodles_1030.png" Key="game1_icon_noodles_1030.png" />
-          <PlistImageFile Name="game1_icon_track-14.png" Key="game1_icon_track-14.png" />
-          <PlistImageFile Name="white_eat_food1.png" Key="white_eat_food1.png" />
-          <PlistImageFile Name="white_eat_food2.png" Key="white_eat_food2.png" />
+          <PlistImageFile Name="game_ui_jiantou.png" Key="game_ui_jiantou.png" />
         </PlistImageFolder>
         <Project Name="GameScene.csd" Type="Scene" />
         <Project Name="FoodBasket.csd" Type="Node" />
@@ -88,6 +85,36 @@
         <Project Name="Heart.csd" Type="Node" />
         <Project Name="Bar.csd" Type="Node" />
         <Project Name="Customer.csd" Type="Node" />
+        <PlistImageFolder Image="Customer.png" PListFile="Customer.plist" Name=".Customer_PList.Dir">
+          <PlistImageFile Name="game_lady_angry_1.png" Key="game_lady_angry_1.png" />
+          <PlistImageFile Name="game_lady_angry_2.png" Key="game_lady_angry_2.png" />
+          <PlistImageFile Name="game_lady_angry_3.png" Key="game_lady_angry_3.png" />
+          <PlistImageFile Name="game_lady_eat_1.png" Key="game_lady_eat_1.png" />
+          <PlistImageFile Name="game_lady_eat_2.png" Key="game_lady_eat_2.png" />
+          <PlistImageFile Name="game_lady_wait_1.png" Key="game_lady_wait_1.png" />
+          <PlistImageFile Name="game_lady_wait_2.png" Key="game_lady_wait_2.png" />
+          <PlistImageFile Name="game_lady_worry_1.png" Key="game_lady_worry_1.png" />
+          <PlistImageFile Name="game_lady_worry_2.png" Key="game_lady_worry_2.png" />
+        </PlistImageFolder>
+        <PlistImageFolder Image="MainScene.png" PListFile="MainScene.plist" Name=".MainScene_PList.Dir">
+          <PlistImageFile Name="denglu_icon_bangzhu.png" Key="denglu_icon_bangzhu.png" />
+          <PlistImageFile Name="denglu_icon_fenxiang.png" Key="denglu_icon_fenxiang.png" />
+          <PlistImageFile Name="denglu_icon_guanyu.png" Key="denglu_icon_guanyu.png" />
+          <PlistImageFile Name="denglu_icon_kaishi.png" Key="denglu_icon_kaishi.png" />
+          <PlistImageFile Name="denglu_icon_mianba.png" Key="denglu_icon_mianba.png" />
+          <PlistImageFile Name="denglu_icon_shangdian.png" Key="denglu_icon_shangdian.png" />
+          <PlistImageFile Name="denglu_icon_xuanguan.png" Key="denglu_icon_xuanguan.png" />
+          <PlistImageFile Name="denglu_icon_设置.png" Key="denglu_icon_设置.png" />
+          <PlistImageFile Name="game_bangzhujiemian_bg.png" Key="game_bangzhujiemian_bg.png" />
+          <PlistImageFile Name="game_bangzhujiemian_dingkuang.png" Key="game_bangzhujiemian_dingkuang.png" />
+          <PlistImageFile Name="game_bangzhujiemian_dingkuanggaoguang.png" Key="game_bangzhujiemian_dingkuanggaoguang.png" />
+          <PlistImageFile Name="game_bangzhujiemian_shicaibg.png" Key="game_bangzhujiemian_shicaibg.png" />
+          <PlistImageFile Name="game_loading_bg.png" Key="game_loading_bg.png" />
+          <PlistImageFile Name="game_loading_noodle.png" Key="game_loading_noodle.png" />
+          <PlistImageFile Name="game_tanchukuang.png" Key="game_tanchukuang.png" />
+          <PlistImageFile Name="game_ui_guanbi.png" Key="game_ui_guanbi.png" />
+          <PlistImageFile Name="nvhai_e.png" Key="nvhai_e.png" />
+        </PlistImageFolder>
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -99,7 +99,7 @@ void Customer::setCustomer(Node* customer_node, struct_MAN* struct_man)
 	customer_tip->setVisible(true);
 
 	//设置顾客基本信息
-	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("white_eat_food1.png");
+	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("game_lady_wait_1.png");
 	customer_man->setDisplayFrame(frame_eat);
 
 	setWaitTime(struct_man->WAIT_TIME);
@@ -149,7 +149,7 @@ bool Customer::isAbelEat()
 void Customer::setStateEating()
 {
 	setCustomerState(e_Customer_State_Eating);
-	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("white_eat_food2.png");
+	SpriteFrame* frame_eat = SpriteFrameCache::getInstance()->getSpriteFrameByName("game_lady_eat_2.png");
 	customer_man->setDisplayFrame(frame_eat);
 }
 
