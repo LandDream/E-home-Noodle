@@ -27,6 +27,9 @@
     <ClCompile Include="..\Classes\Json.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Help.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\Noodle.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -48,6 +51,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Json.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Help.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Noodle.h">
