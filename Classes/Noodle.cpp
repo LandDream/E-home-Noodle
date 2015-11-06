@@ -3,6 +3,7 @@
 Noodle::Noodle()
 {
 	b_noodle_state = true;
+	noodle_id = 0;
 }
 
 Noodle::~Noodle()
@@ -24,13 +25,10 @@ void Noodle::setNoodleTpye(int nID)
 		b_noodle_state = false;
 		str_noodle = String::createWithFormat("game1_icon_orderbg.png");
 	}
-	else if (nID < 10)
-	{
-		str_noodle = String::createWithFormat("game1_icon_noodles_100%d.png", nID);
-	}
 	else
 	{
-		str_noodle = String::createWithFormat("game1_icon_noodles_10%d.png", nID);
+		noodle_id = nID;
+		str_noodle = String::createWithFormat("game1_icon_noodles_%d.png", nID);
 	}
 	Sprite* spr_noodle = Sprite::createWithSpriteFrameName(str_noodle->getCString());
 	this->addChild(spr_noodle);

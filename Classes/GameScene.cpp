@@ -1,10 +1,5 @@
 #include "GameScene.h"
 
-#define TRACK_LONG 23
-#define MAX_CHOOSE_FOOD 6
-#define MAX_CUSTOMER 5
-#define MOVE_SPEED 3
-
 Scene* GameScene::createScene()
 {
     auto scene = Scene::create();
@@ -25,14 +20,16 @@ GameScene::GameScene()
 	rootNode = nullptr;
 	p_level_lab = nullptr;
 	p_time_lab = nullptr;
-	p_money_lab = nullptr;
+	p_Curmoney_lab = nullptr;
+	p_needMoney_lab = nullptr;
 	p_smile_lab = nullptr;
 	p_angry_lab = nullptr;
 	m_recordTime = false;
 	m_begingame = true;
-	m_Time = 10.f;
+	m_Time = 0.f;
 	Timer_Bar = nullptr;
-	m_prcent = 0.f;
+	m_base_time = 0.f;
+	curCoin = 0;
 }
 
 GameScene::~GameScene()
@@ -100,8 +97,10 @@ bool GameScene::init()
 
 	Timer_Bar = dynamic_cast<LoadingBar*>(rootNode->getChildByName("Bar")->getChildByName("time")->getChildByName("TimerBar"));
 
-	p_money_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("money")->getChildByTag(102));
-	p_money_lab->setString("3");
+	p_Curmoney_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("money")->getChildByTag(102));
+	p_Curmoney_lab->setString("0");
+	p_needMoney_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("money")->getChildByTag(105));
+	p_needMoney_lab->setString("0");
 
 	p_smile_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("smile")->getChildByTag(103));
 	p_smile_lab->setString("4");
@@ -170,7 +169,7 @@ void GameScene::update(float delta)
 			{
 				for (int i = 0; i < MAX_CUSTOMER; i++)
 				{
-					if (map_customer[i])
+					if (map_customer[i] && map_customer[i]->isAbelEat())
 					{
 						float pos = (*itr)->getPositionX() - vec_customer[i]->getPositionX() - 667;
 						if (pos < 64 && pos > -64)
@@ -195,14 +194,21 @@ void GameScene::update(float delta)
 	//顾客
 	for (int i = 0; i < MAX_CUSTOMER; i++)
 	{
-		if (map_customer[i])
+		if (map_customer[i])//顾客存在
 		{
-			if (map_customer[i]->getCustomerState() == e_Customer_State_Wait && map_customer[i]->spendWaitTime(delta) || 
-				map_customer[i]->getCustomerState() == e_Customer_State_Eating && map_customer[i]->spendEatTime(delta))
+			if (map_customer[i]->spendTime(delta))
 			{
 				//删除顾客
 				this->removeChild(map_customer[i]);
 				map_customer[i] = nullptr;
+			}
+		}
+		else
+		{
+			struct_MAN* struct_man = Json::getInstance()->getNewCustomer();
+			if (struct_man)
+			{
+				createNewCustomer(i, struct_man);
 			}
 		}
 	}
@@ -298,7 +304,7 @@ void GameScene::cookBook(Ref* pSender)
 //电话
 void GameScene::PhoneFood(Ref * pSender)
 {
-	comeCustomer(4);
+
 }
 //咖啡
 void GameScene::chooseCake(Ref* pSender)
@@ -311,32 +317,17 @@ void GameScene::chooseCake(Ref* pSender)
 		button->runAction(seq);
 	}
 }
-//判断食谱正确
-bool GameScene::isTureFood(int base_food[12])
-{
-	bool is_true = true;
-	for (int i = 0; i < 12; i++)
-	{
-		if (array_food[i] != base_food[i])
-		{
-			is_true = false;
-			break;;
-		}
-	}
-	return is_true;
-}
 //来顾客
-void GameScene::comeCustomer(int nID)
+void GameScene::createNewCustomer(int nNum, struct_MAN* struct_man)
 {
-	if (nID > MAX_CUSTOMER - 1 || nID < 0 ||map_customer[nID])
+	if (nNum > MAX_CUSTOMER - 1 || nNum < 0)
 	{
 		return;
 	}
-	Customer* customer = Customer::createCustomer(vec_customer[nID]);
+	Customer* customer = Customer::createCustomer(vec_customer[nNum], struct_man);
 	this->addChild(customer);
-	customer->setWaitTime(10.f);
 
-	map_customer[nID] = customer;
+	map_customer[nNum] = customer;
 }
 //清理案板
 void GameScene::clearFood()//清除案板
@@ -348,5 +339,26 @@ void GameScene::clearFood()//清除案板
 	}
 	memset(array_food, 0, sizeof(array_food));
 	chooose_food_num = 0;
+}
+
+void GameScene::GetCoin(Ref * pSender)
+{
+	auto sp = Sprite::create();
+	PlayAction(sp);
+}
+
+void GameScene::PlayAction(Sprite * sp)
+{
+	auto Actioncallback = [&]() {
+		int nowCoin = curCoin + 10;//到时候根据实际结口来获取
+		String * str = String::createWithFormat("%d", nowCoin);     
+		p_Curmoney_lab->setString(str->getCString());
+		sp->removeFromParentAndCleanup(true);
+		if (nowCoin >= atoi(p_needMoney_lab->getString().c_str()))
+		{
+		}
+	};
+	sp->runAction(Sequence::create(MoveTo::create(.2f, Vec2(745.f, 720.f)),Actioncallback,nullptr));
+
 }
 

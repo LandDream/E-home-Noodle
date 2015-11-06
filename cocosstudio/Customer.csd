@@ -18,17 +18,17 @@
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="man" ActionTag="-520719216" VisibleForFrame="False" Tag="1" IconVisible="False" LeftMargin="-216.5000" RightMargin="-206.5000" TopMargin="-350.0000" BottomMargin="-250.0000" ctype="SpriteObjectData">
-            <Size X="423.0000" Y="600.0000" />
+            <Size X="163.0000" Y="263.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="-5.0000" Y="50.0000" />
-            <Scale ScaleX="0.5000" ScaleY="0.5000" />
+            <Scale ScaleX="0.8000" ScaleY="0.8000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="PlistSubImage" Path="white_eat_food1.png" Plist="GameScene.plist" />
+            <FileData Type="PlistSubImage" Path="game_lady_wait_1.png" Plist="Customer.plist" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="tip" ActionTag="-77115791" VisibleForFrame="False" Tag="2" IconVisible="True" TopMargin="-230.0000" BottomMargin="230.0000" ctype="SingleNodeObjectData">
+          <AbstractNodeData Name="tip" ActionTag="-77115791" Tag="2" IconVisible="True" TopMargin="-230.0000" BottomMargin="230.0000" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
               <AbstractNodeData Name="bg" ActionTag="219665449" Tag="-1" IconVisible="False" LeftMargin="-67.5000" RightMargin="-65.5000" TopMargin="-66.0000" BottomMargin="-56.0000" ctype="SpriteObjectData">
@@ -53,14 +53,14 @@
                 <FileData Type="PlistSubImage" Path="game1_icon_order_edge.png" Plist="GameScene.plist" />
               </AbstractNodeData>
               <AbstractNodeData Name="noodle" ActionTag="554617939" IconVisible="False" LeftMargin="-62.0000" RightMargin="-56.0000" TopMargin="-60.5000" BottomMargin="-36.5000" ctype="SpriteObjectData">
-                <Size X="118.0000" Y="97.0000" />
+                <Size X="145.0000" Y="105.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="-3.0000" Y="12.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game1_icon_yangchunmian.png" Plist="GameScene.plist" />
+                <FileData Type="PlistSubImage" Path="game1_icon_noodles_1001.png" Plist="GameScene.plist" />
                 <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="heart_1" ActionTag="1095443677" Tag="1" IconVisible="True" LeftMargin="-50.0000" RightMargin="50.0000" TopMargin="35.0000" BottomMargin="-35.0000" InnerActionSpeed="1.0000" ctype="ProjectNodeObjectData">

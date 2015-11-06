@@ -10,6 +10,7 @@
 USING_NS_CC;
 using namespace cocostudio::timeline;
 using namespace ui;
+using namespace std;
 class GameScene : public cocos2d::Layer
 {
 public:
@@ -27,8 +28,7 @@ public:
 	void clearFood();
 	void cookBook(Ref* pSender);
 	void PhoneFood(Ref* pSender);
-	bool isTureFood(int base_food[12]);
-	void comeCustomer(int nID);
+	void createNewCustomer(int nNum, struct_MAN* struct_man);
 	std::string getFoodNameByTag(int nTag);
 
 	CC_SYNTHESIZE(bool, m_recordTime, RecordTime);
@@ -44,12 +44,17 @@ private:
 private:
 	Text * p_level_lab;
 	Text * p_time_lab;
-	Text * p_money_lab;
+	Text * p_Curmoney_lab;
+	Text * p_needMoney_lab;
 	Text * p_smile_lab;
 	Text * p_angry_lab;
 
 	float m_Time;
-	float m_prcent;
+	float m_base_time;
 	LoadingBar * Timer_Bar;
+	int curCoin;
+public:
+	void GetCoin(Ref * pSender);
+	void PlayAction(Sprite * sp);
 	
 };
