@@ -70,14 +70,12 @@ void MainScene::StartGameScene(Ref * pSender)
 
 void MainScene::OpenChooseLayer(Ref * pSender)
 {
-	auto * gq = GuanQiaLayer::create();
-	addChild(gq);
+
 }
 
 void MainScene::OpenHelpLayer(Ref * pSender)
 {
-	auto * hp = HelpLayer::create();
-	addChild(hp);
+
 }
 
 void MainScene::OpenSetingLayer(Ref * pSender)

@@ -369,13 +369,27 @@ void GameScene::PlayAction(Sprite * sp)
 
 }
 
+void GameScene::SetSmileNum(int count)
+{
+	int CurSmileNum = atoi(p_smile_lab->getString().c_str());
+	String *str = String::createWithFormat("%d", CurSmileNum+=1);
+	p_smile_lab->setString(str->getCString);
+}
+
+void GameScene::SetAngryNum(int count)
+{
+	int CurAngryNum = atoi(p_angry_lab->getString().c_str());
+	String *str = String::createWithFormat("%d", CurAngryNum += 1);
+	p_angry_lab->setString(str->getCString);
+}
+
 void GameScene::OpenBackLayer(Ref * pSender)
 {
 	Size vis_size = Director::getInstance()->getVisibleSize();
 	BackLayer * back_layer = BackLayer::create();
-	back_layer->setAnchorPoint(Vec2(0.5f, 0.5f));
+	back_layer->setAnchorPoint(Vec2(0.f, 0.f));
 	back_layer->setPosition(Vec2(vis_size.width / 2, vis_size.height / 2));
-	this->addChild(back_layer);
+	addChild(back_layer);
 	this->stopAllActions();
 	this->unscheduleUpdate();
 }
@@ -384,4 +398,5 @@ void GameScene::OpenSetLayer(Ref* pSender)
 {
 
 }
+
 
