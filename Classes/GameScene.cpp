@@ -410,14 +410,14 @@ void GameScene::SetSmileNum(int count)
 {
 	int CurSmileNum = atoi(p_smile_lab->getString().c_str());
 	String *str = String::createWithFormat("%d", CurSmileNum+=1);
-	p_smile_lab->setString(str->getCString);
+	p_smile_lab->setString(str->getCString());
 }
 
 void GameScene::SetAngryNum(int count)
 {
 	int CurAngryNum = atoi(p_angry_lab->getString().c_str());
 	String *str = String::createWithFormat("%d", CurAngryNum += 1);
-	p_angry_lab->setString(str->getCString);
+	p_angry_lab->setString(str->getCString());
 }
 
 void GameScene::OpenBackLayer(Ref * pSender)
