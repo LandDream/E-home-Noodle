@@ -235,7 +235,11 @@
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
+<<<<<<< HEAD
             <string>$TexturePacker:SmartUpdate:fcb0bb1e6220955bf8be01dcbcf66cf9$</string>
+=======
+            <string>$TexturePacker:SmartUpdate:94ebf6dbbf259d741746a000b2bf2b76$</string>
+>>>>>>> work
             <key>textureFileName</key>
             <string>MainScene.png</string>
         </dict>

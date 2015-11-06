@@ -30,16 +30,35 @@
                 <PreSize X="0.0000" Y="0.0000" />
                 <FileData Type="PlistSubImage" Path="game_ui_menu_menubg.png" Plist="GameScene.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="game_ui_menu_menu_3" ActionTag="-89616294" Tag="249" IconVisible="False" LeftMargin="-41.0000" RightMargin="-41.0000" TopMargin="-24.0000" BottomMargin="-24.0000" ctype="SpriteObjectData">
+              <AbstractNodeData Name="back_btn" ActionTag="1319573532" Tag="559" IconVisible="False" LeftMargin="-40.9979" RightMargin="-41.0021" TopMargin="-24.0002" BottomMargin="-23.9998" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="52" Scale9Height="26" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="82.0000" Y="48.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position />
+                <Position X="0.0021" Y="0.0002" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
-                <FileData Type="PlistSubImage" Path="game_ui_menu_menu.png" Plist="GameScene.plist" />
-                <BlendFunc Src="770" Dst="771" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <NormalFileData Type="PlistSubImage" Path="game_ui_menu_menu.png" Plist="GameScene.plist" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="set_btn" ActionTag="-2092521694" Tag="560" IconVisible="False" LeftMargin="1008.4608" RightMargin="-1090.4608" TopMargin="-23.2980" BottomMargin="-24.7020" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="52" Scale9Height="26" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="82.0000" Y="48.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="1049.4608" Y="-0.7020" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <NormalFileData Type="PlistSubImage" Path="game_ui_menu_menu.png" Plist="GameScene.plist" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
@@ -62,7 +81,7 @@
                 <PreSize X="0.0000" Y="0.0000" />
                 <FileData Type="PlistSubImage" Path="game_ui_menu_showbg.png" Plist="GameScene.plist" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Image_3_0" ActionTag="1987768187" Tag="266" IconVisible="False" LeftMargin="-21.4798" RightMargin="-118.5202" TopMargin="-16.7606" BottomMargin="-18.2394" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="8" BottomEage="8" Scale9OriginX="13" Scale9OriginY="8" Scale9Width="14" Scale9Height="11" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Image_3_0" Visible="False" ActionTag="1987768187" Tag="266" IconVisible="False" LeftMargin="-21.4798" RightMargin="-118.5202" TopMargin="-16.7606" BottomMargin="-18.2394" Scale9Enable="True" LeftEage="13" RightEage="13" TopEage="8" BottomEage="8" Scale9OriginX="13" Scale9OriginY="8" Scale9Width="14" Scale9Height="11" ctype="ImageViewObjectData">
                 <Size X="140.0000" Y="35.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="-21.4798" Y="-0.7394" />

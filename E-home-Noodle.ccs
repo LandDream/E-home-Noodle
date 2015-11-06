@@ -85,6 +85,7 @@
         <Project Name="Heart.csd" Type="Node" />
         <Project Name="Bar.csd" Type="Node" />
         <Project Name="Customer.csd" Type="Node" />
+<<<<<<< HEAD
         <PlistImageFolder Image="Customer.png" PListFile="Customer.plist" Name=".Customer_PList.Dir">
           <PlistImageFile Name="game_lady_angry_1.png" Key="game_lady_angry_1.png" />
           <PlistImageFile Name="game_lady_angry_2.png" Key="game_lady_angry_2.png" />
@@ -96,6 +97,11 @@
           <PlistImageFile Name="game_lady_worry_1.png" Key="game_lady_worry_1.png" />
           <PlistImageFile Name="game_lady_worry_2.png" Key="game_lady_worry_2.png" />
         </PlistImageFolder>
+=======
+        <Project Name="LogoScene.csd" Type="Scene" />
+        <Project Name="mainScence.csd" Type="Scene" />
+        <Project Name="HelpLayer.csd" Type="Layer" />
+>>>>>>> work
         <PlistImageFolder Image="MainScene.png" PListFile="MainScene.plist" Name=".MainScene_PList.Dir">
           <PlistImageFile Name="denglu_icon_bangzhu.png" Key="denglu_icon_bangzhu.png" />
           <PlistImageFile Name="denglu_icon_fenxiang.png" Key="denglu_icon_fenxiang.png" />
@@ -108,6 +114,11 @@
           <PlistImageFile Name="game_bangzhujiemian_dingkuang.png" Key="game_bangzhujiemian_dingkuang.png" />
           <PlistImageFile Name="game_bangzhujiemian_dingkuanggaoguang.png" Key="game_bangzhujiemian_dingkuanggaoguang.png" />
           <PlistImageFile Name="game_bangzhujiemian_shicaibg.png" Key="game_bangzhujiemian_shicaibg.png" />
+<<<<<<< HEAD
+=======
+          <PlistImageFile Name="game_main_bg.png" Key="game_main_bg.png" />
+          <PlistImageFile Name="game_main_noodle.png" Key="game_main_noodle.png" />
+>>>>>>> work
           <PlistImageFile Name="game_tanchukuang.png" Key="game_tanchukuang.png" />
           <PlistImageFile Name="game_ui_guanbi.png" Key="game_ui_guanbi.png" />
           <PlistImageFile Name="nvhai_e.png" Key="nvhai_e.png" />
@@ -115,6 +126,21 @@
           <PlistImageFile Name="game_main_bg.png" Key="game_main_bg.png" />
           <PlistImageFile Name="game_main_noodle.png" Key="game_main_noodle.png" />
         </PlistImageFolder>
+<<<<<<< HEAD
+=======
+        <PlistImageFolder Image="Customer.png" PListFile="Customer.plist" Name=".Customer_PList.Dir">
+          <PlistImageFile Name="game_lady_angry_1.png" Key="game_lady_angry_1.png" />
+          <PlistImageFile Name="game_lady_angry_2.png" Key="game_lady_angry_2.png" />
+          <PlistImageFile Name="game_lady_angry_3.png" Key="game_lady_angry_3.png" />
+          <PlistImageFile Name="game_lady_eat_1.png" Key="game_lady_eat_1.png" />
+          <PlistImageFile Name="game_lady_eat_2.png" Key="game_lady_eat_2.png" />
+          <PlistImageFile Name="game_lady_wait_1.png" Key="game_lady_wait_1.png" />
+          <PlistImageFile Name="game_lady_wait_2.png" Key="game_lady_wait_2.png" />
+          <PlistImageFile Name="game_lady_worry_1.png" Key="game_lady_worry_1.png" />
+          <PlistImageFile Name="game_lady_worry_2.png" Key="game_lady_worry_2.png" />
+        </PlistImageFolder>
+        <Project Name="BackLayer.csd" Type="Layer" />
+>>>>>>> work
       </RootFolder>
     </Group>
   </SolutionFolder>

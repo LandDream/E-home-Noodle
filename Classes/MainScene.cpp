@@ -56,7 +56,8 @@ bool MainScene::init()
 	challenge_btn->addClickEventListener(CC_CALLBACK_1(MainScene::OpenchallengeSceneLayer, this));
 
 	auto sp_action = dynamic_cast<Sprite*>(rootNode->getChildByTag(208));
-	ActionInterval * act1 = ScaleBy::create(.5f, 1.1f);
+	sp_action->setScale(0.6f);
+	ActionInterval * act1 = ScaleBy::create(.8f, 0.7f);
 	sp_action->runAction(RepeatForever::create(Sequence::create(act1, act1->reverse(), nullptr)));
 	return true;
 }

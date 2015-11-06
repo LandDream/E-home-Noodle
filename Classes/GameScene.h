@@ -33,6 +33,9 @@ public:
 
 	CC_SYNTHESIZE(bool, m_recordTime, RecordTime);
 	CC_SYNTHESIZE(bool, m_begingame, begingame);
+
+	void OpenBackLayer(Ref * pSender);
+	void OpenSetLayer(Ref* pSender);
 private:
 	Node* rootNode;
 	std::vector<Sprite*> vec_track;

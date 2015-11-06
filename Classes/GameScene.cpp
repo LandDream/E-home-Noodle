@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "BackLayer.h"
 
 Scene* GameScene::createScene()
 {
@@ -45,7 +46,6 @@ bool GameScene::init()
     }
     rootNode = CSLoader::createNode("GameScene.csb");
     addChild(rootNode);
-
 	//食材盒选菜
 	for (int i = 0; i < 12; i++)
 	{
@@ -65,7 +65,14 @@ bool GameScene::init()
 	//电话
 	Button* phone_btn = dynamic_cast<Button*>(rootNode->getChildByName("phone_btn"));
 	phone_btn->addClickEventListener(CC_CALLBACK_1(GameScene::PhoneFood, this));
-	
+
+	//返回
+	Button* back_btn = dynamic_cast<Button*>(rootNode->getChildByName("Bar")->getChildByName("menu")->getChildByName("back_btn"));
+	back_btn->addClickEventListener(CC_CALLBACK_1(GameScene::OpenBackLayer, this));
+	//设置
+	Button* set_btn = dynamic_cast<Button*>(rootNode->getChildByName("Bar")->getChildByName("menu")->getChildByName("set_btn"));
+	set_btn->addClickEventListener(CC_CALLBACK_1(GameScene::OpenBackLayer, this));
+
 	//传送带
 	for (int i = 0; i < TRACK_LONG; i++)
 	{
@@ -90,23 +97,29 @@ bool GameScene::init()
 
 	//Bar
 	p_level_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("guanqia")->getChildByTag(100));
-	p_level_lab->setString("1");
+	p_level_lab->setString(String::createWithFormat("%d", Json::getInstance()->getCurStage())->getCString());
 
 	p_time_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("time")->getChildByTag(101));
-	p_time_lab->setString("0");
+	p_time_lab->setString(Json::getInstance()->getJson("STAGE",Json::getInstance()->getCurStage(),"STAGE_TIME"));
 
 	Timer_Bar = dynamic_cast<LoadingBar*>(rootNode->getChildByName("Bar")->getChildByName("time")->getChildByName("TimerBar"));
 
 	p_Curmoney_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("money")->getChildByTag(102));
 	p_Curmoney_lab->setString("0");
+
+	struct_STAGE * stage = new struct_STAGE;
+	int needCoin = atoi(Json::getInstance()->getJson("STAGE", Json::getInstance()->getCurStage(), "GOLD_TARGET"));
 	p_needMoney_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("money")->getChildByTag(105));
-	p_needMoney_lab->setString("0");
+	p_needMoney_lab->setString(String::createWithFormat("%d", needCoin)->getCString());
 
 	p_smile_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("smile")->getChildByTag(103));
 	p_smile_lab->setString("4");
 
 	p_angry_lab = dynamic_cast<Text*>(rootNode->getChildByName("Bar")->getChildByName("angry")->getChildByTag(104));
 	this->scheduleUpdate();
+
+	m_Time = (float)atoi(Json::getInstance()->getJson("STAGE", Json::getInstance()->getCurStage(), "STAGE_TIME"));
+	m_base_time = (float)atoi(Json::getInstance()->getJson("STAGE", Json::getInstance()->getCurStage(), "STAGE_TIME"));
     return true;
 }
 
@@ -134,9 +147,9 @@ void GameScene::update(float delta)
 	if (getRecordTime())
 	{
 		m_Time -= delta;
-		String * str = String::createWithFormat("%d", (int)m_Time % 60);
+		String * str = String::createWithFormat("%d", (int)m_Time);
 		p_time_lab->setString(str->getCString());
-		Timer_Bar->setPercent(m_Time / 10.f * 100);
+		Timer_Bar->setPercent(m_Time / m_base_time * 100);
 		if (!p_time_lab->getString().compare("0"))
 		{
 			CCLOG("time over");
@@ -353,6 +366,22 @@ void GameScene::PlayAction(Sprite * sp)
 		}
 	};
 	sp->runAction(Sequence::create(MoveTo::create(.2f, Vec2(745.f, 720.f)),Actioncallback,nullptr));
+
+}
+
+void GameScene::OpenBackLayer(Ref * pSender)
+{
+	Size vis_size = Director::getInstance()->getVisibleSize();
+	BackLayer * back_layer = BackLayer::create();
+	back_layer->setAnchorPoint(Vec2(0.5f, 0.5f));
+	back_layer->setPosition(Vec2(vis_size.width / 2, vis_size.height / 2));
+	this->addChild(back_layer);
+	this->stopAllActions();
+	this->unscheduleUpdate();
+}
+
+void GameScene::OpenSetLayer(Ref* pSender)
+{
 
 }
 

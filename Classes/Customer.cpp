@@ -130,11 +130,11 @@ int Customer::patientLevel()
 	return nLevel;
 }
 
-void Customer::reductionAll()//一切还原
+void Customer::reductionAll()//一切还�?
 {
 	customer_tip->setVisible(false);
 	customer_man->setVisible(false);
-	for (int i = 0; i < MAX_CUSTOMER; i++)//耐心满
+	for (int i = 0; i < MAX_CUSTOMER; i++)//耐心�?
 	{
 		customer_tip->getChildByTag(i + 1)->getChildByName("heart_red")->setVisible(true);
 		customer_tip->getChildByTag(i + 1)->getChildByName("heart_half")->setVisible(false);
